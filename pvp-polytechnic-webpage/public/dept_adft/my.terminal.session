@@ -1,0 +1,61 @@
+Script started on Wednesday 15 November 2017 09:14:00 PM IST
+ls
+date
+sudo
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m ls
+404.html  [0m[01;34massets[0m  index.html  index_portal.html  my.terminal.session  [01;34mportal[0m
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m date
+Wed Nov 15 21:14:15 IST 2017
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m sudo
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+            [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] file ...
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m sudodate[2Plsshutdown -h nownpm install -g firebase-toolls[A[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m [12Pshutdown -h now
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Kdatesudo[Kscript mu[Ky.terminal.session
+Script started, file is my.terminal.session
+ls
+data
+suod service fp oo stop
+sudo ]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m ls
+404.html  [0m[01;34massets[0m  index.html  index_portal.html  my.terminal.session  [01;34mportal[0m
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m data
+serviNo command 'data' found, did you mean:
+ Command 'dat' from package 'liballegro4-dev' (universe)
+ Command 'date' from package 'coreutils' (main)
+data: command not found
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m suod service foo stop
+ceNo command 'suod' found, did you mean:
+ Command 'sudo' from package 'sudo-ldap' (universe)
+ Command 'sudo' from package 'sudo' (main)
+suod: command not found
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m sudo service[K[K[K[K[K[K[K[K[K[K[K[Kls -lh
+total 76K
+-rw-rw-r-- 1 vinay vinay 1.8K Oct 26 18:16 404.html
+drwx------ 8 vinay vinay 4.0K Oct 25 20:58 [0m[01;34massets[0m
+-rw-rw-r-- 1 vinay vinay  26K Oct 30 09:20 index.html
+-rw-rw-r-- 1 vinay vinay  33K Nov 13 10:20 index_portal.html
+-rw-rw-r-- 1 vinay vinay    0 Nov 15 21:14 my.terminal.session
+drwxrwxr-x 3 vinay vinay 4.0K Oct 28 20:02 [01;34mportal[0m
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.7G     0  1.7G   0% /dev
+tmpfs           341M  5.9M  336M   2% /run
+/dev/sda1       455G   56G  376G  13% /
+tmpfs           1.7G   50M  1.7G   3% /dev/shm
+tmpfs           5.0M  4.0K  5.0M   1% /run/lock
+tmpfs           1.7G     0  1.7G   0% /sys/fs/cgroup
+tmpfs           341M   20K  341M   1% /run/user/1000
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m dr[K[Kfree -b
+              total        used        free      shared  buff/cache   available
+Mem:     3574673408  1442545664   646500352    78254080  1485627392  1776156672
+Swap:    3716149248           0  3716149248
+]0;Peppermint Terminal[01;32mvinay@vinay-HP-Notebook[01;34m ~/pvp_webpage1/dept_home_cs $[00m df -k
+Filesystem     1K-blocks     Used Available Use% Mounted on
+udev             1723424        0   1723424   0% /dev
+tmpfs             349092     5948    343144   2% /run
+/dev/sda1      477016056 58631

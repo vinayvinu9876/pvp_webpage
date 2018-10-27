@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--cdn bootstrap css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                          <!--jquery cdn-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+    <script>
+    // Initialize Firebase
+    console.log("Faculty.js initialized...............");
+    var config = {
+      apiKey: "AIzaSyBStJ0PvGJfkb9K9OU0zDYVYmcktWa9Le0",
+      authDomain: "pvpwebpage.firebaseapp.com",
+      databaseURL: "https://pvpwebpage.firebaseio.com",
+      projectId: "pvpwebpage",
+      storageBucket: "pvpwebpage.appspot.com",
+      messagingSenderId: "988177854524"
+    }
+    console.log("configuration complete");
+    firebase.initializeApp(config);
+    </script>
+    <style>
+    .home-sec {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        background: url('../lib/images/comp4.jpg') no-repeat center center;
+        padding: 0;
+        -webkit-background-size: cover;
+        background-size: cover;
+        color: #fff;
+        background-attachment: fixed;
+    }
+
+
+    #contact-sec {
+        padding-top: 10px;
+        padding-bottom: 60px;
+        background: url('../lib/img/contact.jpg') no-repeat center center;
+        padding: 0;
+        -webkit-background-size: cover;
+        background-size: cover;
+        color: #fff;
+        background-attachment: fixed;
+    }
+    </style>
+
+    <!--  Jquery Core Script -->
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <!--Notify js-->
+    <script src='../home_page/js/notify.min.js'></script>
+    <!-- authenticate js-->
+    <script src='portal/js/authenticate.js'></script>
+    <!--faculty js -->
+      <script src="portal/js/faculty_portal.js"></script>
+      <!--GAllery js-->
+      <script src="assets/custom_js/gallery.js"></script>
+      <!--Gallery portal js-->
+      <script src='portal/js/gallery_portal.js'></script>
+      <!--PORTFOLIO -->
+      <script src="../lib/js/agency.js"></script>
+      <!--DEPT highlights -->
+      <script src="assets/custom_js/dept_highlights.js"></script>
+      <!-- DEpt highlights Portal -->
+      <script src='portal/js/dept_highlights_portal.js'></script>
+      <!--Contact portal  js-->
+      <script src="portal/js/contact_messages.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PVP Polytechnic | CDTP</title>
+
+    <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="../lib/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/animate.css">
+  <link rel="stylesheet" href="../lib/css/overwrite.css">
+  <link href="../lib/css/animate.min.css" rel="stylesheet">
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!--###########################-->
+    <link rel="shortcut icon" href="../lib/images/logo5.ico" type="image/x-icon"/>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet" />
+    <!--BOOTSTRAP FLEXSLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/flexslider.css">
+    <!--SLICK TEAM SLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/slick-team-slider.css"
+    <!-- FONT AWESOME CSS -->
+<link href="../lib/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- FLEXSLIDER CSS -->
+<link href="../lib/css/flexslider.css" rel="stylesheet" />
+<!--PORTFOLIO CSS-->
+<link rel="stylesheet" href="../lib/css/gallery.css">
+    <!-- CUSTOM STYLE CSS -->
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+</head>
+<body >
+
+ <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../home_page/index.html" style="color:#fff;font-size:24px;font-color:red;">PVP Polytechnic</a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#home">HOME</a></li>
+                     <li><a href="#features-sec">ABOUT</a></li>
+                    <li><a href="#faculty-sec">FACULTY</a></li>
+                    <li><a href="#portfolio">GALLERY</a></li>
+                     <li><a href="#course-sec">Dept. HIGHLIGHTS</a></li>
+                     <li><a href="#contact-sec">CONTACT</a></li>
+                     <li><a href=""> <strong><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+      <!--NAVBAR SECTION END-->
+      <!-- Button to open the modal login form -->
+      <!--<script>
+      window.onload=function(){
+        var email_id=prompt("Email id:");
+      var password=prompt("Password");
+      authenticate_user(email_id,password);
+      }
+      </script>
+-->
+
+       <div class="home-sec" id="home" >
+           <div class="overlay">
+ <div class="container">
+           <div class="row text-center " >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+                <div class="flexslider set-flexi" id="main-section" >
+                  <img src="../lib/images/logoh.jpg" class="img-circle">
+                    <ul class="slides move-me">
+                        <!-- Slider 01 -->
+                        <li>
+                              <h1>Department of COMMUNITY DEVELOPMENT THROUGH POLYTECHNIC</h1>
+                            <a  href="#faculty-sec" class="btn btn-info btn-lg" >
+                                INTERNAL CO-ORDINATOR
+                            </a>
+                             <a  href="#features-sec" class="btn btn-success btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 01 -->
+
+                        <!-- Slider 02 -->
+                        <li>
+                            <h1>Department of COMMUNITY DEVELOPMENT THROUGH POLYTECHNIC</h1>
+
+                             <a  href="#faculty-sec" class="btn btn-primary btn-lg" >
+                               INTERNAL CO-ORDINATOR
+                            </a>
+                             <a  href="#about" class="btn btn-danger btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 02 -->
+
+                        <!-- Slider 03 -->
+                        <li>
+                            <h1>Department of COMMUNITY DEVELOPMENT THROUGH POLYTECHNIC</h1>
+
+                             <a  href="#faculty-sec" class="btn btn-default btn-lg" >
+                                INTERNAL CO-ORDINATOR
+                            </a>
+                             <a  href="#about" class="btn btn-info btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 03 -->
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+
+               </div>
+                </div>
+           </div>
+
+       </div>
+       <!--HOME SECTION END-->
+    <div  class="tag-line" >
+         <div class="container">
+           <div class="row  text-center" >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> COMMUNITY DEVELOPMENT THROUGH POLYTECHNIC<i class="fa fa-circle-o-notch"></i> </h2>
+                   </div>
+               </div>
+             </div>
+
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+         <div id="features-sec" class="container set-pad" >
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">COMMUNITY DEVELOPMENT THROUGH POLYTECHNIC</h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s" >
+                  CDTP is a wing attached to PVP polytechnic under the direct central government assistance scheme of ministry of Human resources Development(MHRD).New Delhi.
+                  The main objective of the scheme is to sensitize students and faculty of polytechnic towards lve problems of the community ,needing Science and Technology inputs.
+                  Under this scheme we conduct special training programmes for women,youth,SCs/STs,minorities,school dropouts,street children and physically handicapped.
+
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+
+
+             </div>
+
+
+   <!-- FEATURES SECTION END-->
+
+   <!--FACULTY SECTION -->
+
+    <div id="faculty-sec">
+    <div class="container set-pad">
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">INTERNAL CO-ORDINATOR </h1>
+                     <br />
+                     <br />
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+           <div class="row" id="fac_add">
+
+             <br />
+             <br />
+             <br />
+             <br />
+             <br />
+             <style>
+             .wait_text
+             {
+               font-size: 24px;
+               color : white;
+               font-style: italic;
+               font-weight: 400;
+               position:absolute;
+             }
+             </style>
+             <p class='wait_text'><center>PLEASE WAIT......</center></p>
+             <br />
+             <br />
+             <br />
+             <br />
+
+           </div>
+           <div id="new_fac_portal">
+             <div class='col-lg-4 col-md-4 col-sm-4' data-scroll-reveal='enter from the bottom after 0.4s'>
+                <div class='faculty-div form-group'>
+                  <img src='../images1/default_avatar.png' class='img-rounded' width='250' heigth='200' id='fac_img'>
+                  <input type='file' id='fac_image_file' onchange="preview_image('fac_img','fac_image_file')">
+
+                  <h3 id='fac_name'>Name</h3>
+
+                  <hr />
+                  <input type='text' id='fac_name_txt' class='form-control input-sm fac_textbox' value='Name'>
+                  <h4 id='fac_designation'>Designation</h4>
+                  <input type='text' class='form-control input-sm fac_textbox' id='fac_designation_text' value='designation' >
+                  <br />
+                  <h4 id='fac_qualification'>YEAR OF EXPERIENCE</h4>
+                  <input type='text' class='form-control input-sm fac_textbox' id='fac_qualification_text' value='years of exp' >
+                  <br />
+                  <input type='button' class='btn btn-primary' value='Update' onclick="upload_new_fac()">
+                </div>
+              </div>
+
+
+           </div>
+           <div id='fac_progress_bar'></div>
+      </div>
+    </div>
+
+    <script>
+    console.log("I am from JS");
+    function update_textbox()
+    {
+
+    document.getElementById('fac_name').innerHTML=document.getElementById('fac_name_txt').value;
+    document.getElementById('fac_designation').innerHTML=document.getElementById('fac_designation_text').value;
+    document.getElementById('fac_qualification').innerHTML=document.getElementById('fac_qualification_text').value;
+    }
+    function preview_image(output_elem,input_elem)
+    {
+      console.log("previewing  image");
+      var reader = new FileReader();
+      reader.onload = function()
+      {
+        var output = document.getElementById(output_elem);
+        output.src = reader.result;
+      }
+      var get_img_elem=document.getElementById(input_elem);
+      reader.readAsDataURL(get_img_elem.files[0]);
+    }
+    </script>
+
+    <!-- FACULTY SECTION END-->
+
+
+    <!--==========================================
+    GALLERY STARTS
+    ========================================-->
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">GALLERY </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                 We have collected a number of images for you.
+                  </p>
+            </div>
+
+        </div>
+        <center><div class="row" id="img_container"></div></center>
+        <div>
+          <hr />
+          <h3>Add image</h3>
+          <hr />
+          <img src='../images1/image_default.png' width='200' height='250' id='gal_preview'><br />
+          <input type='file' id='new_img_file' onchange="preview_image('gal_preview','new_img_file')">
+          <br />
+          <input type='button' class='btn btn-primary' value="Add image" onclick="add_new_gal_img()">
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!--/#########################gallery##################3-->
+
+
+             <!--/.HEADER LINE END-->
+
+<div id="course-sec" class="container set-pad">
+  <div class="row text-center">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">Department Highlights </h1>
+        <p data-scroll-reveal="enter from the bottom after 0.3s">
+         Our students have won state level prizes
+            </p>
+    </div>
+
+</div>
+           <div class="row set-row-pad">
+             <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" id="post_div">
+
+
+             </div>
+
+
+
+               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                   <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
+                       <span style="font-size:40px;">
+                          <strong>Notice </strong>
+                           <hr />
+                         </span>
+                         <ol type="1" id="notice_list">
+                         <!--List will be added from dept_highlights.js file-->
+                       </ol>
+                       <hr/>
+                       <span style="font-size:40px;">
+                          <strong> Events </strong>
+                           <hr />
+                         </span>
+                         <ol type="a" id="evt_list">
+
+                         </ol>
+                   </div>
+           </div>
+               </div>
+           </div>
+      <!-- COURSES SECTION END-->
+
+    <div id="contact-sec"   >
+           <div class="overlay">
+ <div class="container set-pad">
+      <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Messages</h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                      You can see all the messages  sent you by the users
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
+
+
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2" id='messages_sec'>
+
+                   <div id="visible_msg_content">
+                     Loading.......
+                  </div>
+                  <div id="hidden_msg_content" style="hidden">
+                  </div>
+                  <button type='button' class="btn btn-success"  onclick="see_all_msg()" id="see_all_msg_btn">See All Message<span class="badge" id='msg_badge'></span></button>
+                  <input type="button" class="btn btn-success" value="Hide All message" onlck="hide_all_msg()" id="hide_all_msg_btn" style="visibility:hidden">
+
+
+                </div>
+               </div>
+                </div>
+          </div>
+       </div>
+     <div class="container">
+             <div class="row set-row-pad"  >
+    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Our Location </strong></h2>
+        <hr />
+                    <div >
+                        <h4>Dr.AIT Campus , Mallathalli,</h4>
+                        <h4>Banglore-560056.</h4>
+                        <br />
+                        <h4><strong>Call:</strong>  +080 9210029121 </h4>
+                        <br />
+                        <h4><strong>Email: </strong>vvinu9876@gmail.com</h4>
+                    </div>
+
+
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+                  
+                    </div>
+
+
+                </div>
+                 </div>
+     <!-- CONTACT SECTION END-->
+
+
+     <div id="footer">
+           <center>&copy 2017 www.pvppolytechnic.edu  <br /> All Rights Reserved <br />
+             <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme</a>
+     </center>
+   </div>
+     <!-- FOOTER SECTION END-->
+
+
+    <!--  Core Bootstrap Script -->
+    <script src="../lib/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+         <script src="../lib/js/jquery.flexslider.js"></script>
+     <!--  Scrolling Reveal Script -->
+    <script src="../lib/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+         <script src="../lib/js/custom.js"></script>
+
+
+
+
+</body>
+</html>

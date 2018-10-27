@@ -1,0 +1,36 @@
+[debug] [2018-04-10T09:35:10.284Z] ----------------------------------------------------------------------
+[debug] [2018-04-10T09:35:10.287Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Brundha\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-04-10T09:35:10.287Z] CLI Version:   3.17.7
+[debug] [2018-04-10T09:35:10.287Z] Platform:      win32
+[debug] [2018-04-10T09:35:10.287Z] Node Version:  v8.10.0
+[debug] [2018-04-10T09:35:10.288Z] Time:          Tue Apr 10 2018 15:05:10 GMT+0530 (India Standard Time)
+[debug] [2018-04-10T09:35:10.288Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-04-10T09:35:10.308Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-04-10T09:35:10.308Z] > authorizing via signed-in user
+[debug] [2018-04-10T09:35:10.310Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-04-10T09:35:10.311Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/3DIH7Knhxbu2wHw206_cTvI6UW6dlPFqqn5EOyszZMn3WmqVp9DseTQbxgkuzMA0',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Tue Apr 10 2018 15:05:10 GMT+0530 (India Standard Time)
+[debug] [2018-04-10T09:35:14.957Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-10T09:35:15.019Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pvpwebpage  
+  
+ Tue Apr 10 2018 15:05:15 GMT+0530 (India Standard Time)
+[debug] [2018-04-10T09:35:16.984Z] <<< HTTP RESPONSE 200
+[debug] [2018-04-10T09:35:16.987Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pvpwebpage/tokens  
+  
+ Tue Apr 10 2018 15:05:16 GMT+0530 (India Standard Time)
+[debug] [2018-04-10T09:35:18.850Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'pvpwebpage'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing public directory for upload...
+[warn] !  Warning: Public directory does not contain index.html
+[debug] [2018-04-10T09:35:23.859Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/pvpwebpage/uploads/-L9iuDiWahqw7YvIBhmf?fileCount=37&message=  
+  
+ Tue Apr 10 2018 15:05:23 GMT+0530 (India Standard Time)

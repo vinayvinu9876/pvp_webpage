@@ -1,0 +1,27 @@
+This zip file contains optimized resources for https://pvpwebpage.firebaseapp.com/. The optimized resources are listed below in the format of: 
+filename: url
+
+Note: We only include up to 10 MB of optimized contents. If the
+optimized contents of your page are larger than 10 MB, we list them in
+this file too, with 'NOT INCLUDED' to indicate those URLs require
+further optimization.
+
+css/animate.css: https://pvpwebpage.firebaseapp.com/assets/css/animate.css
+css/animate.min.css: https://pvpwebpage.firebaseapp.com/assets/css/animate.min.css
+css/style.css: https://pvpwebpage.firebaseapp.com/assets/css/style.css
+css/flexslider.css: https://pvpwebpage.firebaseapp.com/assets/css/flexslider.css
+css/slick-team-slider.css: https://pvpwebpage.firebaseapp.com/assets/css/slick-team-slider.css
+js/faculty.js: https://pvpwebpage.firebaseapp.com/assets/angular_js_lib/faculty.js
+js/bootstrap.js: https://pvpwebpage.firebaseapp.com/assets/js/bootstrap.js
+js/jquery.flexslider.js: https://pvpwebpage.firebaseapp.com/assets/js/jquery.flexslider.js
+js/scrollReveal.js: https://pvpwebpage.firebaseapp.com/assets/js/scrollReveal.js
+js/jquery.easing.min.js: https://pvpwebpage.firebaseapp.com/assets/js/jquery.easing.min.js
+js/custom.js: https://pvpwebpage.firebaseapp.com/assets/js/custom.js
+image/logoh.jpg: https://pvpwebpage.firebaseapp.com/assets/images/logoh.jpg
+image/secretary.jpg: https://pvpwebpage.firebaseapp.com/assets/images/secretary.jpg
+image/secretary1.jpg: https://pvpwebpage.firebaseapp.com/assets/images/secretary1.jpg
+image/comp5.jpg: https://pvpwebpage.firebaseapp.com/assets/images/comp5.jpg
+image/facebook.png: https://pvpwebpage.firebaseapp.com/assets/img/Social/facebook.png
+image/google-plus.png: https://pvpwebpage.firebaseapp.com/assets/img/Social/google-plus.png
+image/twitter.png: https://pvpwebpage.firebaseapp.com/assets/img/Social/twitter.png
+image/contact.jpg: https://pvpwebpage.firebaseapp.com/assets/img/contact.jpg

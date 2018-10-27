@@ -1,0 +1,513 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--cdn bootstrap css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                          <!--jquery cdn-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+
+    <script>
+    // Initialize Firebase
+    console.log("Faculty.js initialized...............");
+    var config = {
+      apiKey: "AIzaSyBStJ0PvGJfkb9K9OU0zDYVYmcktWa9Le0",
+      authDomain: "pvpwebpage.firebaseapp.com",
+      databaseURL: "https://pvpwebpage.firebaseio.com",
+      projectId: "pvpwebpage",
+      storageBucket: "pvpwebpage.appspot.com",
+      messagingSenderId: "988177854524"
+    }
+    console.log("configuration complete");
+    firebase.initializeApp(config);
+    </script>
+
+
+
+
+        <style>
+        .home-sec {
+            padding-top: 10px;
+            padding-bottom: 60px;
+            background: url('../images1/course_img/eee.jpeg') no-repeat center center;
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #fff;
+            background-attachment: fixed;
+        }
+
+
+
+        </style>
+
+      <!--Notify js-->
+      <script src='../home_page/js/notify.min.js'></script>
+    <!--faculty js -->
+      <script src="assets/custom_js/faculty.js"></script>
+      <!-- non faculty js -->
+        <script src="assets/custom_js/non_fac.js"></script>
+      <!--GAllery js-->
+      <script src="assets/custom_js/gallery.js"></script>
+      <!--PORTFOLIO -->
+      <script src="../lib/js/agency.js"></script>
+      <!--DEPT highlights -->
+      <script src="assets/custom_js/dept_highlights.js"></script>
+      <!--Contact js-->
+      <script src="assets/custom_js/contact.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PVP Polytechnic | Dept of Electrical and Electronic Enginneering</title>
+
+    <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../lib/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/animate.css">
+  <link rel="stylesheet" href="../lib/css/overwrite.css">
+  <link href="../lib/css/animate.min.css" rel="stylesheet">
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!--###########################-->
+    <link rel="shortcut icon" href="../lib/images/logo5.ico" type="image/x-icon"/>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet" />
+    <!--BOOTSTRAP FLEXSLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/flexslider.css">
+    <!--SLICK TEAM SLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/slick-team-slider.css"
+    <!-- FONT AWESOME CSS -->
+<link href="../lib/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- FLEXSLIDER CSS -->
+<link href="../lib/css/flexslider.css" rel="stylesheet" />
+<!--PORTFOLIO CSS-->
+<link rel="stylesheet" href="../lib/css/gallery.css">
+    <!-- CUSTOM STYLE CSS -->
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+</head>
+<body >
+
+ <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../home_page/index.html" style="color:#fff;font-size:24px;font-color:red;">PVP Polytechnic</a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#home">HOME</a></li>
+                     <li><a href="#features-sec">ABOUT</a></li>
+                    <li><a href="#faculty-sec">FACULTY</a></li>
+                    <li><a href="#portfolio">GALLERY</a></li>
+                     <li><a href="#course-sec">Dept. HIGHLIGHTS</a></li>
+                     <li><a href="#contact-sec">CONTACT</a></li>
+                     <li><a href="index_portal.html"> <strong><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+      <!--NAVBAR SECTION END-->
+       <div class="home-sec" id="home" >
+           <div class="overlay">
+ <div class="container">
+           <div class="row text-center " >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+                <div class="flexslider set-flexi" id="main-section" >
+                  <img src="../images1/logoh.jpg" class="img-circle">
+                    <ul class="slides move-me">
+                        <!-- Slider 01 -->
+                        <li>
+                              <h1>Department of Electrical and Electronic Engineering</h1>
+                           <h3>THE UNIQUE METHOD</h3>
+                            <a  href="#faculty
+                            -sec" class="btn btn-info btn-lg" >
+                                FACULTY
+                            </a>
+                             <a  href="#features-sec" class="btn btn-success btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 01 -->
+
+                        <!-- Slider 02 -->
+                        <li>
+                            <h1>Department of Electrical and Electronic Engineering</h1>
+                           <h3>UNMATCHED APPROACH</h3>
+                             <a  href="#faculty-sec" class="btn btn-primary btn-lg" >
+                               FACULTY
+                            </a>
+                             <a  href="#about" class="btn btn-danger btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 02 -->
+
+                        <!-- Slider 03 -->
+                        <li>
+                            <h1>Department of Electrical and Electronic Engineering</h1>
+                           <h3>AWESOME FACULTY PANEL</h3>
+                             <a  href="#faculty-sec" class="btn btn-default btn-lg" >
+                                FACULTY
+                            </a>
+                             <a  href="#about" class="btn btn-info btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 03 -->
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+
+               </div>
+                </div>
+           </div>
+
+       </div>
+       <!--HOME SECTION END-->
+    <div  class="tag-line" >
+         <div class="container">
+           <div class="row  text-center" >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO THE DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING<i class="fa fa-circle-o-notch"></i> </h2>
+                   </div>
+               </div>
+             </div>
+
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+    <div id="features-sec" class="container set-pad" >
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">DEPARTMENT OF ELECTRICAL AND ELECTRONICS ENGINEERING </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s" >
+               Electrical Engineering is a professional engineering discipline that generally deals with the study and application of electricity,electronics, and electromagnestism.
+
+                    </p>
+            </div>
+
+        </div>
+        <!--/.HEADER LINE END-->
+
+
+      <div class="row" >
+
+
+            <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                <div class="about-div">
+                <img class="img-circle" src="../lib/img/about/quality_edu.png" width="200px" height="170px">
+              <h3 >Quality Education</h3>
+            <hr />
+                  <hr />
+              <p >
+                The quality education is one that is pedagogically and develpomentally sound and educates the student in becoming an active & productive members of society.
+it contribute to peaceful and democratic societies and enhance individual well-being.
+
+              </p>
+
+           </div>
+              </div>
+              <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                <div class="about-div">
+                <img class="img-circle" src="../lib/img/about/systematic.png" width="200px" height="170px">
+              <h3 >SYSTEMATIC APPROACH</h3>
+            <hr />
+                  <hr />
+              <p >
+                In the context of education,system is a unit as a whole incorporating all its aspects and parts,namely,pupils,teachers,curriculum,context and evaluation of instructional objectives.The teaching,learning process is viewed as communication and control taking place between the components of a system.
+
+        </p>
+
+           </div>
+              </div>
+            <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="about-div">
+                <img class="img-circle" src="../lib/img/about/one_to_one.png" width="200px" height="170px">
+              <h3 >ONE TO ONE STUDY</h3>
+            <hr />
+                  <hr />
+              <p >
+                One to one teaching is made special by the fact that many techers have to develop there own strategies, approaches and materials.
+This approaches and techniques to help effective learning
+              </p>
+
+           </div>
+              </div>
+             </div>
+              <div class="row">
+
+                <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                    <div class="about-div">
+                    <img class="img-circle" src="../lib/images/MISSION.png" width="200px" height="170px">
+                  <h3 >MISSION</h3>
+                <hr />
+                      <hr />
+                  <p >
+                    To understand the basic principles of Electrical and Electronics Technology more through practical learning.
+                  </p>
+
+               </div>
+                  </div>
+
+                  <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                      <div class="about-div">
+                      <img class="img-circle" src="../lib/images/VISSION.png" width="200px" height="170px">
+                    <h3 >VISION</h3>
+                  <hr />
+                        <hr />
+                    <p >
+                      To deliver technically proficient students to the industry.
+
+                    </p>
+
+                 </div>
+                    </div>
+
+
+          </div>
+        </div>
+
+   <!-- FEATURES SECTION END-->
+   <div id="faculty-sec">
+   <div class="container set-pad">
+            <div class="row text-center">
+                <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">DEPARTMENT HISTORY AND FACILITIES</h1>
+                    The department was established in the year 1992 with a sanctioned intake of 30 students.The college and department came under the grant-in-aid scheme,Government of karnataka in the year 2001.The student intake also has steadily increased to 40 and currently the intake is 60 .The college and department came under the Grant-in-aid scheme,Government of Karnataka in the year 2001.
+                    Most laboratories were setup under the MODROB scheme. The labs are well equipped to meet the student requirement.The computer lab has 20 systems with LAN facility.All the labs are fully equipped as per the AICTE norms.
+           <br /><br />
+
+
+                </div>
+
+            </div>
+          </div>
+        </div>
+   <!--FACULTY SECTION -->
+
+    <div id="faculty-sec">
+    <div class="container set-pad">
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">OUR FACULTY </h1>
+                     The department has eight faculty members supported by six non-teaching staff members.The faculty members have wide experience in teaching and delivering practical knowledge to the students.The commitment and expertise
+                     of the faculty has enhanced the competancelevel of our students,helping them to secure admissions in prestigious institutions to pursue higher education and also,the students seeking employmet are prepared to meet the demands of the industry .
+                     The students are nurtured to think innovatively .The non-teaching staff are were trained to assist the students during pratical sessions.
+                       <br /><br />
+
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+           <div class="row" id="fac_add">
+
+             <br />
+             <br />
+             <br />
+             <br />
+             <br />
+             <style>
+             .wait_text
+             {
+               font-size: 24px;
+               color : white;
+               font-style: italic;
+               font-weight: 400;
+               position:absolute;
+             }
+             </style>
+             <p class='wait_text'><center>PLEASE WAIT......</center></p>
+             <br />
+             <br />
+             <br />
+             <br />
+
+           </div>
+              <div class="row" id="non_fac_add"></div>
+      </div>
+    </div>
+
+
+    <!-- FACULTY SECTION END-->
+
+
+    <!--==========================================
+    GALLERY STARTS
+    ========================================-->
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">GALLERY </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                 We have collected a number of images for you.
+                  </p>
+            </div>
+
+        </div>
+
+
+        <center><div class="row" id="img_container"></div></center>
+
+      </div>
+
+    </section>
+
+
+
+    <!--/#########################gallery##################3-->
+
+
+             <!--/.HEADER LINE END-->
+             <div id="course-sec" class="container set-pad">
+               <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">Department Highlights </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+                         </p>
+                 </div>
+
+             </div>
+                        <div class="row set-row-pad">
+                          <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" id="post_div">
+
+
+                    </div>
+
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                                <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
+                                    <span style="font-size:40px;">
+                                       <strong>Notice</strong>
+                                        <hr />
+                                      </span>
+                                      <ol type="1" id="notice_list">
+                                      <!--List will be added from dept_highlights.js file-->
+                                    </ol>
+                                    <hr/>
+                                    <span style="font-size:40px;">
+                                       <strong> Events </strong>
+                                        <hr />
+                                      </span>
+                                      <ol type="a" id="evt_list">
+
+                                      </ol>
+                                </div>
+                        </div>
+                            </div>
+                        </div>
+
+      <!-- COURSES SECTION END-->
+    <div id="contact-sec"   >
+           <div class="overlay">
+ <div class="container set-pad">
+      <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo.
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo.
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
+
+
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control "  required="required" placeholder="Your Name" id="name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control " required="required"  placeholder="Your Phone number" id="phone_num" />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message" id="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button  class="btn btn-info btn-block btn-lg" onclick="submit_request()">SUBMIT REQUEST</button>
+                        </div>
+
+
+                </div>
+               </div>
+                </div>
+          </div>
+       </div>
+     <div class="container">
+             <div class="row set-row-pad"  >
+    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Our Location </strong></h2>
+        <hr />
+                    <div >
+                        <h4>Dr.AIT Campus , Mallathalli,</h4>
+                        <h4>Banglore-560056.</h4>
+                        <br />
+                        <h4><strong>Call:</strong>  +080 9210029121 </h4>
+                        <br />
+                        <h4><strong>Email: </strong>vvinu9876@gmail.com</h4>
+                    </div>
+
+
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+
+                    </div>
+
+
+                </div>
+                 </div>
+     <!-- CONTACT SECTION END-->
+
+
+     <div id="footer">
+           <center>&copy 2017 www.pvppolytechnic.edu  <br /> All Rights Reserved <br />
+             <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme</a>
+     </center>
+   </div>
+     <!-- FOOTER SECTION END-->
+
+    <!--  Jquery Core Script -->
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="../lib/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+         <script src="../lib/js/jquery.flexslider.js"></script>
+     <!--  Scrolling Reveal Script -->
+    <script src="../lib/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+         <script src="../lib/js/custom.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--cdn bootstrap css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                          <!--jquery cdn-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+
+    <script>
+    // Initialize Firebase
+    console.log("Faculty.js initialized...............");
+    var config = {
+      apiKey: "AIzaSyBStJ0PvGJfkb9K9OU0zDYVYmcktWa9Le0",
+      authDomain: "pvpwebpage.firebaseapp.com",
+      databaseURL: "https://pvpwebpage.firebaseio.com",
+      projectId: "pvpwebpage",
+      storageBucket: "pvpwebpage.appspot.com",
+      messagingSenderId: "988177854524"
+    }
+    console.log("configuration complete");
+    firebase.initializeApp(config);
+    </script>
+
+
+
+        <style>
+        .home-sec {
+            padding-top: 10px;
+            padding-bottom: 60px;
+            background: url('../images1/course_img/placement.jpg') no-repeat center center;
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #fff;
+            background-attachment: fixed;
+        }
+
+
+        #contact-sec {
+            padding-top: 10px;
+            padding-bottom: 60px;
+            background: url('../lib/img/contact.jpg') no-repeat center center;
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #fff;
+            background-attachment: fixed;
+        }
+        </style>
+
+      <!--Notify js-->
+      <script src='../home_page/js/notify.min.js'></script>
+    <!--faculty js -->
+      <script src="assets/custom_js/faculty.js"></script>
+      <!--GAllery js-->
+      <script src="assets/custom_js/gallery.js"></script>
+      <!--PORTFOLIO -->
+      <script src="../lib/js/agency.js"></script>
+      <!--DEPT highlights -->
+      <script src="assets/custom_js/dept_highlights.js"></script>
+      <!--Placement results js-->
+      <script src="assets/custom_js/placement_results.js"></script>
+      <!--Contact js-->
+      <script src="assets/custom_js/contact.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PVP Polytechnic | Placements</title>
+
+    <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../lib/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/animate.css">
+  <link rel="stylesheet" href="../lib/css/overwrite.css">
+  <link href="../lib/css/animate.min.css" rel="stylesheet">
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!--###########################-->
+    <link rel="shortcut icon" href="../lib/images/logo5.ico" type="image/x-icon"/>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet" />
+    <!--BOOTSTRAP FLEXSLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/flexslider.css">
+    <!--SLICK TEAM SLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/slick-team-slider.css"
+    <!-- FONT AWESOME CSS -->
+<link href="../lib/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- FLEXSLIDER CSS -->
+<link href="../lib/css/flexslider.css" rel="stylesheet" />
+<!--PORTFOLIO CSS-->
+<link rel="stylesheet" href="../lib/css/gallery.css">
+    <!-- CUSTOM STYLE CSS -->
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+</head>
+<body >
+
+ <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../home_page/index.html" style="color:#fff;font-size:24px;font-color:red;">PVP Polytechnic</a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#home">HOME</a></li>
+                     <li><a href="#features-sec">ABOUT</a></li>
+                    <li><a href="#faculty-sec">CO-ORDINATORS</a></li>
+                    <li><a href="#results">PLACEMENT RESULTS</a></li>
+                    <li><a href="#portfolio">GALLERY</a></li>
+                     <li><a href="#course-sec">HIGHLIGHTS</a></li>
+                     <li><a href="#contact-sec">CONTACT</a></li>
+                     <li><a href="index_portal.html"> <strong><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+      <!--NAVBAR SECTION END-->
+       <div class="home-sec" id="home" >
+           <div class="overlay">
+ <div class="container">
+           <div class="row text-center " >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+                <div class="flexslider set-flexi" id="main-section" >
+                  <img src="../images1/logoh.jpg" class="img-circle">
+                    <ul class="slides move-me">
+                        <!-- Slider 01 -->
+                        <li>
+                              <h1>Placements</h1>
+                           <h3>THE UNIQUE METHOD</h3>
+                            <a  href="#faculty
+                            -sec" class="btn btn-info btn-lg" >
+                              Placement Results
+                            </a>
+                             <a  href="#features-sec" class="btn btn-success btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 01 -->
+
+                        <!-- Slider 02 -->
+                        <li>
+                            <h1>Placements</h1>
+                           <h3>UNMATCHED APPROACH</h3>
+                             <a  href="#faculty-sec" class="btn btn-primary btn-lg" >
+                               Placement Results
+                            </a>
+                             <a  href="#about" class="btn btn-danger btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 02 -->
+
+                        <!-- Slider 03 -->
+                        <li>
+                            <h1>Placements</h1>
+                           <h3>AWESOME FACULTY PANEL</h3>
+                             <a  href="#faculty-sec" class="btn btn-default btn-lg" >
+                                Placement Results
+                            </a>
+                             <a  href="#about" class="btn btn-info btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 03 -->
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+
+               </div>
+                </div>
+           </div>
+
+       </div>
+       <!--HOME SECTION END-->
+    <div  class="tag-line" >
+         <div class="container">
+           <div class="row  text-center" >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO PLACEMENT<i class="fa fa-circle-o-notch"></i> </h2>
+                   </div>
+               </div>
+             </div>
+
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+         <div id="features-sec" class="container set-pad" >
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">ABOUT</h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s" >
+                       Placement Cell interacts with the reputed organizations all over the country for arranging campus interviews for the final year students. We make efforts to organize technical seminars, workshops and corporate expectation sessions. Industry personnel are invited periodically to enrich the knowledge of our student community with the latest technological innovations and industry practices. We produce graduates who are well equipped to handle the working norms of the industry and commerce in the public and private sectors and helping every student to define his/her career interest through individual counseling through experts.
+
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+
+           <div class="row" >
+
+
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                     <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
+                   <h3 >Objective</h3>
+                 <hr />
+                       <hr />
+                   <p >
+                      The placement cell has grown since its inception , co-ordinating with many leading organizations in providing employment oppurtunities for the students.
+
+                   </p>
+
+                </div>
+                   </div>
+
+                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                     <div class="about-div">
+                     <i class="fa fa-bolt fa-4x icon-round-border" ></i>
+                   <h3 >Placement Companies</h3>
+                 <hr />
+                       <hr />
+                   <p>
+                         Some of the reputed companies where our students are placed during 2016-17 are <br />
+                         ABB, Ravindu Toyota, Tayana Software Solutions, Ramco Cements, Concepts and Devices, Cummins India Ltd,
+                         Shriram Pistons and Rings, Trauson India Ltd, ACT Fibernet, Toyota Kirloskar Pvt Ltd, Banglore Aircraft Industries PPvt Ltd(BIAL) and many more.
+
+                   </p>
+
+                </div>
+                   </div>
+
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+                     <div class="about-div">
+                     <i class="fa fa-magic fa-4x icon-round-border" ></i>
+                   <h3 >Placement </h3>
+                 <hr />
+                       <hr />
+                   <p >
+                    PVP Polytechnic (formerly PVP Polytechnic), ranked #1 in Karnataka. Source: DataQuest.
+                   </p>
+
+                </div>
+                   </div>
+
+
+
+
+
+                 </div>
+
+                   <div class="row">
+
+                     <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                         <div class="about-div">
+                            <img class="img-circle" src="../lib/images/MISSION.png" width="200px" height="170px">
+                       <h3 >MISSION</h3>
+                     <hr />
+                           <hr />
+                       <p >
+                       To acheive 100% placement year after year</p>
+
+                    </div>
+                       </div>
+
+
+                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                       <div class="about-div">
+                       <img class="img-circle" src="../lib/images/VISSION.png" width="200px" height="170px">
+                     <h3 >VISION</h3>
+                   <hr />
+                         <hr />
+                     <p >
+                      The placement committee envision an interface betweenthe student and the industry.
+                     </p>
+
+                  </div>
+                     </div>
+
+
+
+               </div>
+             </div>
+
+
+   <!-- FEATURES SECTION END-->
+
+   <!--FACULTY SECTION -->
+
+    <div id="faculty-sec">
+    <div class="container set-pad">
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">PLACEMENT OFFICER</h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    Placement officer is commisioned to look after the placement activities as well as training the candidates to attend he interview. Our aim is to improve the quality of the students to have with 100% placement.
+                       </p>
+
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+           <div class="row" id="fac_add">
+
+             <br />
+             <br />
+             <br />
+             <br />
+             <br />
+             <style>
+             .wait_text
+             {
+               font-size: 24px;
+               color : white;
+               font-style: italic;
+               font-weight: 400;
+               position:absolute;
+             }
+             </style>
+             <p class='wait_text'><center>PLEASE WAIT......</center></p>
+             <br />
+             <br />
+             <br />
+             <br />
+
+           </div>
+      </div>
+    </div>
+
+
+    <!-- FACULTY SECTION END-->
+
+
+
+    <div id="results">
+      <div class="container set-pad">
+
+      <div class="row text-center">
+        <div class="col-lg-12  col-md-12 col-sm-12 ">
+            <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">PLACEMENT RESULTS <b id="year">2017</b></h1>
+
+
+        </div>
+      </div>
+    <div class="row set-row-pad  text-center">
+      <div class="col-lg-12  col-md-12 col-sm-12 " data-scroll-reveal="enter from the bottom after 0.4s" id="result_sec">
+
+<div class="table-responsive">
+        <center>
+          <style>
+          th , td{
+
+            padding : 2px;
+            text-align: center;
+            height : 50px;
+
+          }
+          th{
+            color : white;
+            background-color: green;
+          }
+
+
+          table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+          </style>
+
+
+
+        <table class="table-bordered table-striped">
+
+          <thead>
+            <tr>
+            <th>Branch</th>
+            <th>Total no of students</th>
+            <th>No of students </th>
+            <th>Joined for higher education</th>
+            <th>Working in industries</th>
+            <th>Total percentage</th>
+          </tr>
+          </thead>
+          <tbody>
+
+
+            <tr>
+              <td>Computer Sceince and Engineering</td>
+              <td id="tns_cs">Loading</td>
+              <td id="nos_cs">Loading</td>
+              <td id="jhe_cs">Loading</td>
+
+              <td id="wii_cs">Loading</td>
+              <td id="tp_cs">Loading</td>
+            </tr>
+
+            <tr>
+              <td>Information Science and Engineering</td>
+              <td id="tns_is">Loading</td>
+              <td id="nos_is">Loading</td>
+              <td id="jhe_is">Loading</td>
+
+              <td id="wii_is">Loading</td>
+              <td id="tp_is">Loading</td>
+            </tr>
+
+            <tr>
+              <td>Civil Engineering</td>
+              <td id="tns_ce">Loading</td>
+              <td id="nos_ce" >Loading</td>
+
+              <td id="jhe_ce">Loading</td>
+              <td id="wii_ce">Loading</td>
+              <td id="tp_ce">Loading</td>
+            </tr>
+
+            <tr>
+              <td>Electricals and Electronics Engineering</td>
+              <td id="tns_ee">Loading</td>
+              <td id="nos_ee">Loading</td>
+              <td id="jhe_ee">Loading</td>
+
+              <td id="wii_ee">Loading</td>
+              <td id="tp_ee">Loading</td>
+          </tr>
+
+          <tr>
+            <td>Electronics and Communication Engineering</td>
+            <td id="tns_ec">Loading</td>
+            <td id="nos_ec">Loading</td>
+            <td id="jhe_ec">Loading</td>
+
+            <td id="wii_ec">Loading</td>
+            <td id="tp_ec">Loading</td>
+        </tr>
+
+        <tr>
+          <td>Electronics and Instrumentation Technology</td>
+          <td id="tns_ic">Loading</td>
+          <td id="nos_ic">Loading</td>
+          <td id="jhe_ic">Loading</td>
+
+          <td id="wii_ic">Loading</td>
+          <td id="tp_ic">Loading</td>
+      </tr>
+
+      <tr>
+        <td>Automobile Engineering</td>
+        <td id="tns_at">Loading</td>
+        <td id="nos_at">Loading</td>
+        <td id="jhe_at">Loading</td>
+
+        <td id="wii_at">Loading</td>
+        <td id="tp_at">Loading</td>
+    </tr>
+
+    <tr>
+      <td>Mechanical Engineering</td>
+      <td id="tns_me">Loading</td>
+      <td id="nos_me">Loading</td>
+      <td id="jhe_me">Loading</td>
+
+      <td id="wii_me">Loading</td>
+      <td id="tp_me">Loading</td>
+  </tr>
+
+  <tr>
+    <td>Apparel Design and Fashion Technology</td>
+    <td id="tns_adft">Loading</td>
+    <td id="nos_adft">Loading</td>
+    <td id="jhe_adft">Loading</td>
+
+    <td id="wii_adft">Loading</td>
+    <td id="tp_adft">Loading</td>
+</tr>
+
+            <tbody>
+
+        </table>
+
+
+              </center>
+    </div>
+
+
+</div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!--==========================================
+    GALLERY STARTS
+    ========================================-->
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">GALLERY </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                 We have collected a number of images for you.
+                  </p>
+            </div>
+
+        </div>
+
+
+        <center><div class="row" id="img_container"></div></center>
+
+      </div>
+
+    </section>
+
+
+
+    <!--/#########################gallery##################3-->
+
+
+             <!--/.HEADER LINE END-->
+
+<div id="course-sec" class="container set-pad">
+  <div class="row text-center">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">Placements Highlights </h1>
+        <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+            </p>
+    </div>
+
+</div>
+           <div class="row set-row-pad">
+             <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" id="post_div">
+
+
+       </div>
+
+               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                   <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
+                       <span style="font-size:40px;">
+                          <strong>Notice</strong>
+                           <hr />
+                         </span>
+                         <ol type="1" id="notice_list">
+                         <!--List will be added from dept_highlights.js file-->
+                       </ol>
+                       <hr/>
+                       <span style="font-size:40px;">
+                          <strong> Events </strong>
+                           <hr />
+                         </span>
+                         <ol type="a" id="evt_list">
+
+                         </ol>
+                   </div>
+           </div>
+               </div>
+           </div>
+      <!-- COURSES SECTION END-->
+    <div id="contact-sec"   >
+           <div class="overlay">
+ <div class="container set-pad">
+      <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >CONTACT US  </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo.
+                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                        Aenean commodo.
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
+
+
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+
+                        <div class="form-group">
+                            <input type="text" class="form-control "  required="required" placeholder="Your Name" id="name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control " required="required"  placeholder="Your Phone number" id="phone_num" />
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" required="required" class="form-control" style="min-height: 150px;" placeholder="Message" id="message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button  class="btn btn-info btn-block btn-lg" onclick="submit_request()">SUBMIT REQUEST</button>
+                        </div>
+
+
+                </div>
+               </div>
+                </div>
+          </div>
+       </div>
+     <div class="container">
+             <div class="row set-row-pad"  >
+    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Our Location </strong></h2>
+        <hr />
+                    <div >
+                        <h4>Dr.AIT Campus , Mallathalli,</h4>
+                        <h4>Banglore-560056.</h4>
+                        <br />
+                        <h4><strong>Call:</strong>  +080 9210029121 </h4>
+                        <br />
+                        <h4><strong>Email: </strong>vvinu9876@gmail.com</h4>
+                    </div>
+
+
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4  col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+
+                    </div>
+
+
+                </div>
+                 </div>
+     <!-- CONTACT SECTION END-->
+
+
+     <div id="footer">
+           <center>&copy 2017 www.pvppolytechnic.edu  <br /> All Rights Reserved <br />
+             <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme</a>
+     </center>
+   </div>
+     <!-- FOOTER SECTION END-->
+
+    <!--  Jquery Core Script -->
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="../lib/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+         <script src="../lib/js/jquery.flexslider.js"></script>
+     <!--  Scrolling Reveal Script -->
+    <script src="../lib/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+         <script src="../lib/js/custom.js"></script>
+
+
+
+</body>
+</html>

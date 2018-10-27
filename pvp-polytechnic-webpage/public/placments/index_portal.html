@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--cdn bootstrap css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                          <!--jquery cdn-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+    <script>
+    // Initialize Firebase
+    console.log("Faculty.js initialized...............");
+    var config = {
+      apiKey: "AIzaSyBStJ0PvGJfkb9K9OU0zDYVYmcktWa9Le0",
+      authDomain: "pvpwebpage.firebaseapp.com",
+      databaseURL: "https://pvpwebpage.firebaseio.com",
+      projectId: "pvpwebpage",
+      storageBucket: "pvpwebpage.appspot.com",
+      messagingSenderId: "988177854524"
+    }
+    console.log("configuration complete");
+    firebase.initializeApp(config);
+    </script>
+
+        <style>
+        .home-sec {
+            padding-top: 10px;
+            padding-bottom: 60px;
+            background: url('../images1/course_img/placement.jpg') no-repeat center center;
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #fff;
+            background-attachment: fixed;
+        }
+
+
+        #contact-sec {
+            padding-top: 10px;
+            padding-bottom: 60px;
+            background: url('../lib/img/contact.jpg') no-repeat center center;
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #fff;
+            background-attachment: fixed;
+        }
+        </style>
+
+    <!--  Jquery Core Script -->
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <!--Notify js-->
+    <script src='../home_page/js/notify.min.js'></script>
+    <!-- authenticate js-->
+    <script src='portal/js/authenticate.js'></script>
+    <!--faculty js -->
+      <script src="portal/js/faculty_portal.js"></script>
+      <!--GAllery js-->
+      <script src="assets/custom_js/gallery.js"></script>
+      <!--Gallery portal js-->
+      <script src='portal/js/gallery_portal.js'></script>
+      <!--PORTFOLIO -->
+      <script src="../lib/js/agency.js"></script>
+      <!--DEPT highlights -->
+      <script src="assets/custom_js/dept_highlights.js"></script>
+      <!-- DEpt highlights Portal -->
+      <script src='portal/js/dept_highlights_portal.js'></script>
+      <!--Contact portal  js-->
+      <script src="portal/js/contact_messages.js"></script>
+      <!--Placement Results js-->
+      <script src="portal/js/placement_results_portal.js"></script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PVP Polytechnic | Placements</title>
+
+    <!-- Bootstrap -->
+
+  <link rel="stylesheet" href="../lib/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/animate.css">
+  <link rel="stylesheet" href="../lib/css/overwrite.css">
+  <link href="../lib/css/animate.min.css" rel="stylesheet">
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!--###########################-->
+    <link rel="shortcut icon" href="../lib/images/logo5.ico" type="image/x-icon"/>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet" />
+    <!--BOOTSTRAP FLEXSLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/flexslider.css">
+    <!--SLICK TEAM SLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/slick-team-slider.css"
+    <!-- FONT AWESOME CSS -->
+<link href="../lib/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- FLEXSLIDER CSS -->
+<link href="../lib/css/flexslider.css" rel="stylesheet" />
+<!--PORTFOLIO CSS-->
+<link rel="stylesheet" href="../lib/css/gallery.css">
+    <!-- CUSTOM STYLE CSS -->
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+</head>
+<body >
+
+ <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../home_page/index.html" style="color:#fff;font-size:24px;font-color:red;">PVP Polytechnic</a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#home">HOME</a></li>
+                     <li><a href="#features-sec">ABOUT</a></li>
+                    <li><a href="#faculty-sec">FACULTY</a></li>
+                    <li><a href="#portfolio">GALLERY</a></li>
+                     <li><a href="#course-sec">HIGHLIGHTS</a></li>
+                     <li><a href="#contact-sec">CONTACT</a></li>
+                     <li><a href=""> <strong><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+      <!--NAVBAR SECTION END-->
+      <!-- Button to open the modal login form -->
+      <!--<script>
+      window.onload=function(){
+        var email_id=prompt("Email id:");
+      var password=prompt("Password");
+      authenticate_user(email_id,password);
+      }
+      </script>
+-->
+
+       <div class="home-sec" id="home" >
+           <div class="overlay">
+ <div class="container">
+           <div class="row text-center " >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+                <div class="flexslider set-flexi" id="main-section" >
+                  <img src="../lib/images/logoh.jpg" class="img-circle">
+                    <ul class="slides move-me">
+                        <!-- Slider 01 -->
+                        <li>
+                              <h1>Placements</h1>
+                           <h3>THE UNIQUE METHOD</h3>
+                            <a  href="#faculty
+                            -sec" class="btn btn-info btn-lg" >
+                                CO-ORDINATOR
+                            </a>
+                             <a  href="#features-sec" class="btn btn-success btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 01 -->
+
+                        <!-- Slider 02 -->
+                        <li>
+                            <h1>Placements</h1>
+                           <h3>UNMATCHED APPROACH</h3>
+                             <a  href="#faculty-sec" class="btn btn-primary btn-lg" >
+                               FACULTY
+                            </a>
+                             <a  href="#about" class="btn btn-danger btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 02 -->
+
+                        <!-- Slider 03 -->
+                        <li>
+                            <h1>Placements</h1>
+                           <h3>AWESOME FACULTY PANEL</h3>
+                             <a  href="#faculty-sec" class="btn btn-default btn-lg" >
+                                FACULTY
+                            </a>
+                             <a  href="#about" class="btn btn-info btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 03 -->
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+
+               </div>
+                </div>
+           </div>
+
+       </div>
+       <!--HOME SECTION END-->
+    <div  class="tag-line" >
+         <div class="container">
+           <div class="row  text-center" >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WELCOME TO PLACEMENTS <i class="fa fa-circle-o-notch"></i> </h2>
+                   </div>
+               </div>
+             </div>
+
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+         <div id="features-sec" class="container set-pad" >
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">ABOUT</h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s" >
+                  Placement Cell interacts with the reputed organizations all over the country for arranging campus interviews for the final year students. We make efforts to organize technical seminars, workshops and corporate expectation sessions. Industry personnel are invited periodically to enrich the knowledge of our student community with the latest technological innovations and industry practices. We produce graduates who are well equipped to handle the working norms of the industry and commerce in the public and private sectors and helping every student to define his/her career interest through individual counseling through experts.
+
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+
+           <div class="row" >
+
+
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                     <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
+                   <h3 >Objective</h3>
+                 <hr />
+                       <hr />
+                   <p>
+                     The placement cell has grown since its inception , co-ordinating with many leading organizations in providing employment oppurtunities for the students.
+
+                   </p>
+
+                </div>
+                   </div>
+                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                     <div class="about-div">
+                     <i class="fa fa-bolt fa-4x icon-round-border" ></i>
+                   <h3 >Placement Companies</h3>
+                 <hr />
+                       <hr />
+                   <p >
+                        Some of the reputed companies where our students are placed during 2016-17 are Global Infotech Ltd,banglore, ACE designer , Bajaj Motors, Jet king,Wipro Technologies,wipro,Kirloskar ,Aptech,Essar steels gujarath
+                   </p>
+
+                </div>
+                   </div>
+
+
+                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                       <div class="about-div">
+                         <img class="img-circle" src="../lib/images/MISSION.png" width="200px" height="170px">
+                     <h3 >MISSION</h3>
+                   <hr />
+                         <hr />
+                     <p >
+                       To acheive 100% placement year after year.
+                     </p>
+                  </div>
+                     </div>
+                   </div>
+                     <div class="row">
+                     <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                         <div class="about-div">
+                            <img class="img-circle" src="../lib/images/VISSION.png" width="200px" height="170px">
+                       <h3 >VISION</h3>
+                     <hr />
+                           <hr />
+                       <p >
+The placement committee envision an interface betweenthe student and the industry.
+           </p>
+         </div>
+                       </div>
+                       <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+                           <div class="about-div">
+                           <i class="fa fa-magic fa-4x icon-round-border" ></i>
+                         <h3 >Placement Activity  </h3>
+                       <hr />
+                             <hr />
+                         <p >
+
+                            1.Students attended pooled campus drive by Ramco Cements.Two Students of civil Engg branch were shortlisted for second round of interview after the prelinuinary aptitude test<br /><br />
+                            2.Students attended pooled campus drive by Tayana Software Soultions.<br /><br />
+                            3.Ravindu toyota conducted campus drive Automobile Engineering and Mechanical Engineering 19 students have been shortlisted.<br /><br />
+
+
+                         </p>
+
+                      </div>
+                         </div>
+
+
+
+                         <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.6s">
+                             <div class="about-div">
+                             <i class="fa fa-magic fa-4x icon-round-border" ></i>
+                           <h3 >Placement Activity</h3>
+                         <hr />
+                               <hr />
+                           <p >
+
+
+                              4.ACT Fibernet cindusted camous drive for EEE , ECE , CSE and IST students. 10 students have been shortlisted<br /><br />
+                              5.HireMee , an online recriutment placement conducted online assesment test for students of all the branches<br /><br />
+                              6.UTL Technologies Pvt Ltd conducted n awareness program on "Skill Development" Under the PMKVY scheme for EEE , ECE , EI&CE , CSE , IST<br /><br />
+
+                           </p>
+
+                        </div>
+                           </div>
+
+
+
+               </div>
+             </div>
+             </div>
+
+
+   <!-- FEATURES SECTION END-->
+
+   <!--FACULTY SECTION -->
+
+    <div id="faculty-sec">
+    <div class="container set-pad">
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">CO-ORDINATOR </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+                       </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+           <div class="row" id="fac_add">
+
+             <br />
+             <br />
+             <br />
+             <br />
+             <br />
+             <style>
+             .wait_text
+             {
+               font-size: 24px;
+               color : white;
+               font-style: italic;
+               font-weight: 400;
+               position:absolute;
+             }
+             </style>
+             <p class='wait_text'><center>PLEASE WAIT......</center></p>
+             <br />
+             <br />
+             <br />
+             <br />
+
+           </div>
+           <div id="new_fac_portal">
+             <div class='col-lg-4 col-md-4 col-sm-4' data-scroll-reveal='enter from the bottom after 0.4s'>
+                <div class='faculty-div form-group'>
+                  <img src='../images1/default_avatar.png' class='img-rounded' width='250' heigth='200' id='fac_img'>
+                  <input type='file' id='fac_image_file' onchange="preview_image('fac_img','fac_image_file')">
+
+                  <h3 id='fac_name'>Name</h3>
+
+                  <hr />
+                  <input type='text' id='fac_name_txt' class='form-control input-sm fac_textbox' value='name'>
+                  <h4 id='fac_designation'>designation</h4>
+                  <input type='text' class='form-control input-sm fac_textbox' id='fac_designation_text' value='designation' >
+                  <br />
+                  <h4 id='fac_qualification'>YEAR OF EXP</h4>
+                  <input type='text' class='form-control input-sm fac_textbox' id='fac_qualification_text' value='YEAR OF EXP'>
+                  <br />
+                  <input type='button' class='btn btn-primary' value='Update' onclick="upload_new_fac()">
+                </div>
+              </div>
+
+
+           </div>
+           <div id='fac_progress_bar'></div>
+      </div>
+    </div>
+
+    <script>
+    console.log("I am from JS");
+    function update_textbox()
+    {
+
+    document.getElementById('fac_name').innerHTML=document.getElementById('fac_name_txt').value;
+    document.getElementById('fac_designation').innerHTML=document.getElementById('fac_designation_text').value;
+    document.getElementById('fac_qualification').innerHTML=document.getElementById('fac_qualification_text').value;
+    }
+    function preview_image(output_elem,input_elem)
+    {
+      console.log("previewing  image");
+      var reader = new FileReader();
+      reader.onload = function()
+      {
+        var output = document.getElementById(output_elem);
+        output.src = reader.result;
+      }
+      var get_img_elem=document.getElementById(input_elem);
+      reader.readAsDataURL(get_img_elem.files[0]);
+    }
+    </script>
+
+    <!-- FACULTY SECTION END-->
+
+
+
+
+        <div id="results">
+          <div class="container set-pad">
+
+          <div class="row text-center">
+            <div class="col-lg-12  col-md-12 col-sm-12 ">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">PLACEMENT RESULTS <input type="text" id="year" onchange="update_results('year',this.value)"> </h1>
+
+
+            </div>
+          </div>
+        <div class="row set-row-pad  text-center">
+          <div class="col-lg-12  col-md-12 col-sm-12 " data-scroll-reveal="enter from the bottom after 0.4s" id="result_sec">
+
+    <div class="table-responsive">
+            <center>
+              <style>
+              th , td{
+
+                padding : 2px;
+                text-align: center;
+                height : 50px;
+
+              }
+              th{
+                color : white;
+                background-color: green;
+              }
+
+
+              table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+              </style>
+
+
+
+            <table class="table-bordered table-striped">
+
+              <thead>
+                <tr>
+                <th>Branch</th>
+                <th>Total no of students</th>
+                <th>No of students </th>
+                <th>Joined for higher education</th>
+                <th>Working in industries</th>
+                <th>Placed Company Name</th>
+                <th>Total percentage</th>
+              </tr>
+              </thead>
+              <tbody>
+
+
+                <tr>
+                  <td>Computer Sceince and Engineering</td>
+                  <td><input type="text" size="4" id="tns_cs" onchange="update_results('cs/total_no_of_students',this.value)"></td>
+                  <td><input type="text" size="4" id="nos_cs"  onchange="update_results('cs/no_of_students',this.value)"></td>
+                  <td><input type="text" size="4"  id="jhe_cs" onchange="update_results('cs/joined_for_higher_edu',this.value)"></td>
+                  <td ><input type="text" size="4"  id="wii_cs" onchange="update_results('cs/working_in_industries',this.value)"></td>
+                  <td ><input type="text" size="10"  id="cn_cs" onchange="update_results('cs/working_in_CompanyName',this.value)"></td>
+
+                  <td ><input type="text" size="4"  id="tp_cs" onchange="update_results('cs/total_percentage',this.value)"> %</td>
+                </tr>
+
+                <tr>
+                  <td>Information Science and Engineering</td>
+                  <td><input type="text" size="4" id="tns_is" onchange="update_results('is/total_no_of_students',this.value)"></td>
+                  <td><input type="text" size="4" id="nos_is" onchange="update_results('is/no_of_students',this.value)"></td>
+                  <td><input type="text" size="4"  id="jhe_is" onchange="update_results('is/joined_for_higher_edu',this.value)"></td>
+                  <td ><input type="text" size="4"  id="wii_is" onchange="update_results('is/working_in_industries',this.value)"></td>
+                  <td ><input type="text" size="10"  id="cn_is" onchange="update_results('is/working_in_CompanyName',this.value)"></td>
+
+                  <td ><input type="text" size="4"  id="tp_is" onchange="update_results('is/total_percentage',this.value)">%</td>
+                </tr>
+
+                <tr>
+                  <td>Civil Engineering</td>
+                  <td><input type="text" size="4" id="tns_ce" onchange="update_results('ce/total_no_of_students',this.value)"></td>
+                  <td><input type="text" size="4" id="nos_ce" onchange="update_results('ce/no_of_students',this.value)"></td>
+                  <td><input type="text" size="4"  id="jhe_ce" onchange="update_results('ce/joined_for_higher_edu',this.value)"></td>
+                  <td ><input type="text" size="4"  id="wii_ce" onchange="update_results('ce/working_in_industries',this.value)"></td>
+                  <td ><input type="text" size="10"  id="cn_ce" onchange="update_results('ce/working_in_CompanyName',this.value)"></td>
+
+                  <td ><input type="text" size="4"  id="tp_ce" onchange="update_results('ce/total_percentage',this.value)"> %</td>
+                </tr>
+
+                <tr>
+                  <td>Electricals and Electronics Engineering</td>
+                  <td><input type="text" size="4" id="tns_ee" onchange="update_results('ee/total_no_of_students',this.value)"></td>
+                  <td><input type="text" size="4" id="nos_ee"  onchange="update_results('ee/no_of_students',this.value)"></td>
+                  <td><input type="text" size="4"  id="jhe_ee" onchange="update_results('ee/joined_for_higher_edu',this.value)"></td>
+                  <td ><input type="text" size="4"  id="wii_ee" onchange="update_results('ee/working_in_industries',this.value)"></td>
+                  <td ><input type="text" size="10"  id="cn_ee" onchange="update_results('ee/working_in_CompanyName',this.value)"></td>
+
+                  <td ><input type="text" size="4"  id="tp_ee" onchange="update_results('ee/total_percentage',this.value)">%</td>
+              </tr>
+
+              <tr>
+                <td>Electronics and Communication Engineering</td>
+                <td><input type="text" size="4" id="tns_ec" onchange="update_results('ec/total_no_of_students',this.value)"></td>
+                <td><input type="text" size="4" id="nos_ec"  onchange="update_results('ec/no_of_students',this.value)"></td>
+                <td><input type="text" size="4"  id="jhe_ec" onchange="update_results('ec/joined_for_higher_edu',this.value)"></td>
+                <td ><input type="text" size="4"  id="wii_ec" onchange="update_results('ec/working_in_industries',this.value)"></td>
+                <td ><input type="text" size="10"  id="cn_ec" onchange="update_results('ec/working_in_CompanyName',this.value)"></td>
+
+                <td ><input type="text" size="4"  id="tp_ec" onchange="update_results('ec/total_percentage',this.value)">%</td>
+            </tr>
+
+            <tr>
+              <td>Electronics and Instrumentation Technology</td>
+              <td><input type="text" size="4" id="tns_ic" onchange="update_results('ic/total_no_of_students',this.value)"></td>
+              <td><input type="text" size="4" id="nos_ic"  onchange="update_results('ic/no_of_students',this.value)"></td>
+              <td><input type="text" size="4"  id="jhe_ic" onchange="update_results('ic/joined_for_higher_edu',this.value)"></td>
+              <td ><input type="text" size="4"  id="wii_ic" onchange="update_results('ic/working_in_industries',this.value)"></td>
+              <td ><input type="text" size="10"  id="cn_ic" onchange="update_results('ic/working_in_CompanyName',this.value)"></td>
+
+              <td ><input type="text" size="4"  id="tp_ic" onchange="update_results('ic/total_percentage',this.value)">%</td>
+          </tr>
+
+          <tr>
+            <td>Automobile Engineering</td>
+            <td><input type="text" size="4" id="tns_at" onchange="update_results('at/total_no_of_students',this.value)"></td>
+            <td><input type="text" size="4" id="nos_at" onchange="update_results('at/no_of_students',this.value)"></td>
+            <td><input type="text" size="4"  id="jhe_at" onchange="update_results('at/joined_for_higher_edu',this.value)"></td>
+            <td ><input type="text" size="4"  id="wii_at"  onchange="update_results('at/working_in_industries',this.value)"></td>
+            <td ><input type="text" size="10"  id="cn_at" onchange="update_results('at/working_in_CompanyName',this.value)"></td>
+
+            <td ><input type="text" size="4"  id="tp_at" onchange="update_results('at/total_percentage',this.value)">%</td>
+        </tr>
+
+        <tr>
+          <td>Mechanical Engineering</td>
+          <td><input type="text" size="4" id="tns_me" onchange="update_results('me/total_no_of_students',this.value)"></td>
+          <td><input type="text" size="4" id="nos_me" onchange="update_results('me/no_of_students',this.value)"></td>
+          <td><input type="text" size="4"  id="jhe_me"  onchange="update_results('me/joined_for_higher_edu',this.value)"></td>
+          <td ><input type="text" size="4"  id="wii_me" onchange="update_results('me/working_in_industries',this.value)"></td>
+          <td ><input type="text" size="10"  id="cn_me" onchange="update_results('me/working_in_CompanyName',this.value)"></td>
+
+          <td ><input type="text" size="4"  id="tp_me" onchange="update_results('me/total_percentage',this.value)">%</td>
+        </tr>
+
+      <tr>
+        <td>Apparel Design and Fashion Technology</td>
+        <td><input type="text" size="4" id="tns_adft" onchange="update_results('adft/total_no_of_students',this.value)"></td>
+        <td><input type="text" size="4" id="nos_adft" onchange="update_results('adft/no_of_students',this.value)"></td>
+        <td><input type="text" size="4"  id="jhe_adft" onchange="update_results('adft/joined_for_higher_edu',this.value)"></td>
+        <td ><input type="text" size="4"  id="wii_adft" onchange="update_results('adft/working_in_industries',this.value)"></td>
+        <td ><input type="text" size="10"  id="cn_adft" onchange="update_results('adft/working_in_CompanyName',this.value)"></td>
+
+        <td ><input type="text" size="4"  id="tp_adft" onchange="update_results('adft/total_percentage',this.value)">%</td>
+    </tr>
+
+                <tbody>
+
+            </table>
+
+
+                  </center>
+        </div>
+
+
+    </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!--==========================================
+    GALLERY STARTS
+    ========================================-->
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">GALLERY </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                 We have collected a number of images for you.
+                  </p>
+            </div>
+
+        </div>
+        <center><div class="row" id="img_container"></div></center>
+        <div>
+          <hr />
+          <h3>Add image</h3>
+          <hr />
+          <img src='../images1/image_default.png' width='200' height='250' id='gal_preview'><br />
+          <input type='file' id='new_img_file' onchange="preview_image('gal_preview','new_img_file')">
+          <br />
+          <input type='button' class='btn btn-primary' value="Add image" onclick="add_new_gal_img()">
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!--/#########################gallery##################3-->
+
+
+             <!--/.HEADER LINE END-->
+
+<div id="course-sec" class="container set-pad">
+  <div class="row text-center">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">Placements Highlights </h1>
+        <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+            </p>
+    </div>
+
+</div>
+           <div class="row set-row-pad">
+             <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" id="post_div">
+
+
+             </div>
+
+
+
+               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                   <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
+                       <span style="font-size:40px;">
+                          <strong>Notice </strong>
+                           <hr />
+                         </span>
+                         <ol type="1" id="notice_list">
+                         <!--List will be added from dept_highlights.js file-->
+                       </ol>
+                       <hr/>
+                       <span style="font-size:40px;">
+                          <strong> Events </strong>
+                           <hr />
+                         </span>
+                         <ol type="a" id="evt_list">
+
+                         </ol>
+                   </div>
+           </div>
+               </div>
+           </div>
+      <!-- COURSES SECTION END-->
+
+    <div id="contact-sec"   >
+           <div class="overlay">
+ <div class="container set-pad">
+      <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line" >Messages</h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                      You can see all the messages  sent you by the users
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+           <div class="row set-row-pad"  data-scroll-reveal="enter from the bottom after 0.5s" >
+
+
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2" id='messages_sec'>
+
+                   <div id="visible_msg_content">
+                     Loading.......
+                  </div>
+                  <div id="hidden_msg_content" style="hidden">
+                  </div>
+                  <button type='button' class="btn btn-success"  onclick="see_all_msg()" id="see_all_msg_btn">See All Message<span class="badge" id='msg_badge'></span></button>
+                  <input type="button" class="btn btn-success" value="Hide All message" onlck="hide_all_msg()" id="hide_all_msg_btn" style="visibility:hidden">
+
+
+                </div>
+               </div>
+                </div>
+          </div>
+       </div>
+     <div class="container">
+             <div class="row set-row-pad"  >
+    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Our Location </strong></h2>
+        <hr />
+                    <div >
+                        <h4>Dr.AIT Campus , Mallathalli,</h4>
+                        <h4>Banglore-560056.</h4>
+                        <br />
+                        <h4><strong>Call:</strong>  +080 9210029121 </h4>
+                        <br />
+                        <h4><strong>Email: </strong>vvinu9876@gmail.com</h4>
+                    </div>
+
+
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+
+                    </div>
+
+
+                </div>
+                 </div>
+     <!-- CONTACT SECTION END-->
+
+
+     <div id="footer">
+           <center>&copy 2017 www.pvppolytechnic.edu  <br /> All Rights Reserved <br />
+             <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme</a>
+     </center>
+   </div>
+     <!-- FOOTER SECTION END-->
+
+
+    <!--  Core Bootstrap Script -->
+    <script src="../lib/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+         <script src="../lib/js/jquery.flexslider.js"></script>
+     <!--  Scrolling Reveal Script -->
+    <script src="../lib/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+         <script src="../lib/js/custom.js"></script>
+
+
+
+
+</body>
+</html>

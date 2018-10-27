@@ -1,0 +1,425 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  <!--cdn bootstrap css-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                          <!--jquery cdn-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-database.js"></script>
+
+    <script>
+    // Initialize Firebase
+    console.log("Faculty.js initialized...............");
+    var config = {
+      apiKey: "AIzaSyBStJ0PvGJfkb9K9OU0zDYVYmcktWa9Le0",
+      authDomain: "pvpwebpage.firebaseapp.com",
+      databaseURL: "https://pvpwebpage.firebaseio.com",
+      projectId: "pvpwebpage",
+      storageBucket: "pvpwebpage.appspot.com",
+      messagingSenderId: "988177854524"
+    }
+    console.log("configuration complete");
+    firebase.initializeApp(config);
+    </script>
+
+
+
+        <style>
+        .home-sec {
+            padding-top: 10px;
+            padding-bottom: 60px;
+            background: url('../images1/course_img/womencell1.jpg') no-repeat center center;
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #fff;
+            background-attachment: fixed;
+        }
+
+
+        #contact-sec {
+            padding-top: 10px;
+            padding-bottom: 60px;
+            background: url('../lib/img/contact.jpg') no-repeat center center;
+            padding: 0;
+            -webkit-background-size: cover;
+            background-size: cover;
+            color: #fff;
+            background-attachment: fixed;
+        }
+        </style>
+
+      <!--Notify js-->
+      <script src='../home_page/js/notify.min.js'></script>
+    <!--faculty js -->
+      <script src="assets/custom_js/faculty.js"></script>
+      <!--GAllery js-->
+      <script src="assets/custom_js/gallery.js"></script>
+      <!--PORTFOLIO -->
+      <script src="../lib/js/agency.js"></script>
+      <!--DEPT highlights -->
+      <script src="assets/custom_js/dept_highlights.js"></script>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PVP Polytechnic | Women cell</title>
+
+    <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../lib/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../lib/css/animate.css">
+  <link rel="stylesheet" href="../lib/css/overwrite.css">
+  <link href="../lib/css/animate.min.css" rel="stylesheet">
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!--###########################-->
+    <link rel="shortcut icon" href="../lib/images/logo5.ico" type="image/x-icon"/>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="../lib/css/bootstrap.css" rel="stylesheet" />
+    <!--BOOTSTRAP FLEXSLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/flexslider.css">
+    <!--SLICK TEAM SLIDER CSS-->
+    <link rel="stylesheet" href="../lib/css/slick-team-slider.css">
+    <!-- FONT AWESOME CSS -->
+<link href="../lib/css/font-awesome.min.css" rel="stylesheet" />
+     <!-- FLEXSLIDER CSS -->
+<link href="../lib/css/flexslider.css" rel="stylesheet" />
+<!--PORTFOLIO CSS-->
+<link rel="stylesheet" href="../lib/css/gallery.css">
+    <!-- CUSTOM STYLE CSS -->
+  <link href="../lib/css/style.css" rel="stylesheet" />
+  <!-- Google	Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+</head>
+<body >
+
+ <div class="navbar navbar-inverse navbar-fixed-top " id="menu">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../home_page/index.html" style="color:#fff;font-size:24px;font-color:red;">PVP Polytechnic</a>
+            </div>
+            <div class="navbar-collapse collapse move-me">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#home">HOME</a></li>
+                     <li><a href="#features-sec">ABOUT</a></li>
+                    <li><a href="#faculty-sec">Co-ordinator</a></li>
+                    <li><a href="#portfolio">GALLERY</a></li>
+                     <li><a href="#course-sec">HIGHLIGHTS</a></li>
+
+                     <li><a href="index_portal.html"> <strong><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+      <!--NAVBAR SECTION END-->
+       <div class="home-sec" id="home" >
+           <div class="overlay">
+ <div class="container">
+           <div class="row text-center " >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+                <div class="flexslider set-flexi" id="main-section" >
+                  <img src="../images1/logoh.jpg" class="img-circle">
+                    <ul class="slides move-me">
+                        <!-- Slider 01 -->
+                        <li>
+                              <h1>WOMENS CELL</h1>
+                           <h3>THE UNIQUE METHOD</h3>
+                            <a  href="#faculty -sec" class="btn btn-info btn-lg" >
+                                Co-ordinator
+                            </a>
+                             <a  href="#features-sec" class="btn btn-success btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 01 -->
+
+                        <!-- Slider 02 -->
+                        <li>
+                            <h1>WOMENS CELL</h1>
+                           <h3>UNMATCHED APPROACH</h3>
+                             <a  href="#faculty-sec" class="btn btn-primary btn-lg" >
+                               Co-ordinator
+                            </a>
+                             <a  href="#about" class="btn btn-danger btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 02 -->
+
+                        <!-- Slider 03 -->
+                        <li>
+                            <h1>WOMENS CELL</h1>
+                           <h3>AWESOME FACULTY PANEL</h3>
+                             <a  href="#faculty-sec" class="btn btn-default btn-lg" >
+                                Co-ordinator
+                            </a>
+                             <a  href="#about" class="btn btn-info btn-lg" >
+                                ABOUT
+                            </a>
+                        </li>
+                        <!-- End Slider 03 -->
+                    </ul>
+                </div>
+
+
+
+
+            </div>
+
+               </div>
+                </div>
+           </div>
+
+       </div>
+       <!--HOME SECTION END-->
+    <div  class="tag-line" >
+         <div class="container">
+           <div class="row  text-center" >
+
+               <div class="col-lg-12  col-md-12 col-sm-12">
+
+        <h2 data-scroll-reveal="enter from the bottom after 0.1s" ><i class="fa fa-circle-o-notch"></i> WOMENS CELLS <i class="fa fa-circle-o-notch"></i> </h2>
+                   </div>
+               </div>
+             </div>
+
+    </div>
+    <!--HOME SECTION TAG LINE END-->
+         <div id="features-sec" class="container set-pad" >
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line">Womens Cell</h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s" >
+                      The College has established a Women Cell in the college campus for the women faculty, staff and girl students, to enhance understanding of issues related to women and to make the college campus a safe place for them. With an aim of creating awareness of their rights and duties the cell organizes and participates in seminars, talks and also takes up women’s issues and problems. It also provides a platform for women to share their experiences and views regarding their status in the society and to suggest ways to improve and empower themselves. Aiming at intellectual and social upliftment of the female students, the cell stands for facilitating women’s empowerment through guest lectures, seminars, awareness programmes life skill training programmes, entrepreneur training and other welfare activities.
+
+                         </p>
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+
+           <div class="row" >
+
+
+                 <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.4s">
+                     <div class="about-div">
+                     <i class="fa fa-paper-plane-o fa-4x icon-round-border" ></i>
+                   <h3 >Objectives</h3>
+                 <hr />
+                       <hr />
+                   <p >
+                     These are to serve the Women faculty and students of college.
+
+To enhance the self-esteem and self-confidence of women students, faculty and staff in the college.
+To promote intellectual and cultural activities for overall personality development of student.
+To develop critical thinking ability of women students such that it enhances decision-making   ability.
+To enable women to make informed choices in areas like education, employment and health especially reproductive health.
+To enhance their participation on an equal footing in all areas
+
+                   </p>
+
+                </div>
+                   </div>
+                   <div class="col-lg-4  col-md-4 col-sm-4" data-scroll-reveal="enter from the bottom after 0.5s">
+                     <div class="about-div">
+                     <i class="fa fa-bolt fa-4x icon-round-border" ></i>
+                   <h3 >Women cell processing at PVP Polytechnic</h3>
+                 <hr />
+                       <hr />
+                   <p >
+                       PVP Polytechnic (formerly PVP Polytechnic), ranked #1 in Karnataka. Source: DataQuest.
+                   </p>
+
+                </div>
+                   </div>
+
+
+               </div>
+             </div>
+
+
+   <!-- FEATURES SECTION END-->
+
+   <!--FACULTY SECTION -->
+
+    <div id="faculty-sec">
+    <div class="container set-pad">
+             <div class="row text-center">
+                 <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                     <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">WOMEN GRIEVANCE CELL </h1>
+                     <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    In order to maintain safety and security to the girls and women, a cell has been constituted for redressal of grievances. Our women grievance cell stays alert all the time to prevent any sexual abuse towards the students and female workers. If the students face any harassment from the staff or workers, then they can complain at our women grievance cell. The members will look into the issues, gather the evidence, and take the necessary action against the guilty. We also focus on preventing this kind of harassment by using secret monitory services, which keep a keen eye on the entire campus.
+                 </div>
+
+             </div>
+             <!--/.HEADER LINE END-->
+
+           <div class="row" id="fac_add">
+
+             <br />
+             <br />
+             <br />
+             <br />
+             <br />
+             <style>
+             .wait_text
+             {
+               font-size: 24px;
+               color : white;
+               font-style: italic;
+               font-weight: 400;
+               position:absolute;
+             }
+             </style>
+             <p class='wait_text'><center>PLEASE WAIT......</center></p>
+             <br />
+             <br />
+             <br />
+             <br />
+
+           </div>
+      </div>
+    </div>
+
+
+    <!-- FACULTY SECTION END-->
+
+
+    <!--==========================================
+    GALLERY STARTS
+    ========================================-->
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row text-center">
+            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+                <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">GALLERY </h1>
+                <p data-scroll-reveal="enter from the bottom after 0.3s">
+                 We have collected a number of images for you.
+                  </p>
+            </div>
+
+        </div>
+
+
+        <center><div class="row" id="img_container"></div></center>
+
+      </div>
+
+    </section>
+
+
+
+    <!--/#########################gallery##################3-->
+
+
+             <!--/.HEADER LINE END-->
+
+<div id="course-sec" class="container set-pad">
+  <div class="row text-center">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
+        <h1 data-scroll-reveal="enter from the bottom after 0.1s" class="header-line">Womencell Highlights </h1>
+        <p data-scroll-reveal="enter from the bottom after 0.3s">
+
+            </p>
+    </div>
+
+</div>
+           <div class="row set-row-pad">
+             <div class="col-lg-6 col-md-6 col-sm-6 " data-scroll-reveal="enter from the bottom after 0.4s" id="post_div">
+
+
+       </div>
+
+               <div class="col-lg-4 col-md-4 col-sm-4 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+                   <div class="alert alert-info" data-scroll-reveal="enter from the bottom after 1.1s" >
+                       <span style="font-size:40px;">
+                          <strong>Notice</strong>
+                           <hr />
+                         </span>
+                         <ol type="1" id="notice_list">
+                         <!--List will be added from dept_highlights.js file-->
+                       </ol>
+                       <hr/>
+                       <span style="font-size:40px;">
+                          <strong> Events </strong>
+                           <hr />
+                         </span>
+                         <ol type="a" id="evt_list">
+
+                         </ol>
+                   </div>
+           </div>
+               </div>
+           </div>
+      <!-- COURSES SECTION END-->
+
+     <div class="container">
+             <div class="row set-row-pad"  >
+    <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1 " data-scroll-reveal="enter from the bottom after 0.4s">
+
+                    <h2 ><strong>Our Location </strong></h2>
+        <hr />
+                    <div >
+                        <h4>Dr.AIT Campus , Mallathalli,</h4>
+                        <h4>Banglore-560056.</h4>
+                        <br />
+                        <h4><strong>Call:</strong>  +080 9210029121 </h4>
+                        <br />
+                        <h4><strong>Email: </strong>vvinu9876@gmail.com</h4>
+                    </div>
+
+
+                </div>
+                 <div class="col-lg-4 col-md-4 col-sm-4   col-lg-offset-1 col-md-offset-1 col-sm-offset-1" data-scroll-reveal="enter from the bottom after 0.4s">
+
+
+                    </div>
+
+
+                </div>
+                 </div>
+     <!-- CONTACT SECTION END-->
+
+
+     <div id="footer">
+           <center>&copy 2017 www.pvppolytechnic.edu  <br /> All Rights Reserved <br />
+             <a href="http://binarytheme.com" style="color: #fff" target="_blank">Design by : binarytheme</a>
+     </center>
+   </div>
+     <!-- FOOTER SECTION END-->
+
+    <!--  Jquery Core Script -->
+    <script src="../lib/js/jquery-1.10.2.js"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="../lib/js/bootstrap.js"></script>
+    <!--  Flexslider Scripts -->
+         <script src="../lib/js/jquery.flexslider.js"></script>
+     <!--  Scrolling Reveal Script -->
+    <script src="../lib/js/scrollReveal.js"></script>
+    <!--  Scroll Scripts -->
+    <script src="../lib/js/jquery.easing.min.js"></script>
+    <!--  Custom Scripts -->
+         <script src="../lib/js/custom.js"></script>
+
+
+
+</body>
+</html>

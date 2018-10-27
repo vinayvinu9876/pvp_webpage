@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--===============================================
+    Template Design By WpFreeware Team.
+    Author URI : http://www.wpfreeware.com/
+    ====================================================-->
+
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>PVP Polytechnic</title>
+
+    <!-- Mobile Specific Metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../images1/logo5.ico"/>
+
+    <!--- FIREBASE----->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-auth.js"></script>
+
+    <!--INIT SCRIPT-->
+      <script src="js/firebase_init.js"> </script>
+
+    <!--check duplicate js-->
+    <script src="portal/js/check_duplicate.js"></script>
+
+    <!---Tab Pane JS -->
+    <script src="portal/js/portal_tab_pane.js"></script>
+
+    <!--Course Sec JS---->
+    <script src="js/course_sec.js"></script>
+    <!--Gallery Sec JS---->
+    <script src="portal/js/gallery_portal.js"></script>
+    <!--Management Portal Js-->
+    <script src="portal/js/management_portal.js"></script>
+    <!--Testimonial JS-->
+    <script src='js/testimonial.js'></script>
+    <!--Testimonial Portal JS--->
+    <script src="portal/js/testimonial_portal.js"></script>
+    <!--Contact Portal JS--->
+    <script src='portal/js/contact_messages.js'></script>
+    <!--Portal Tab pane JS-->
+    <script src='portal/js/tab_pane_portal.js'></script>
+    <!---Portal Course Sec JS-->
+    <script src='portal/js/course_sec_portal.js'></script>
+
+    <!--Auth state js-->
+    <script src="js/login/check_user.js"></script>
+
+    <!-- Logout JS-->
+    <script src="js/login/logout.js"></script>
+
+
+    <!-- CSS
+    ================================================== ->
+    <!-- Bootstrap css file-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font awesome css file-->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <!-- Superslide css file-->
+    <link rel="stylesheet" href="css/superslides.css">
+    <!-- Slick slider css file -->
+    <link href="css/slick.css" rel="stylesheet">
+    <!-- Circle counter cdn css file -->
+    <link rel='stylesheet prefetch' href='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/css/jquery.circliful.css'>
+    <!-- smooth animate css file -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- gallery slider css -->
+    <link type="text/css" media="all" rel="stylesheet" href="css/jquery.tosrus.all.css" />
+    <!-- Default Theme css file -->
+    <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">
+    <!-- Main structure css file -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"></a>
+    <!-- END SCROLL TOP BUTTON -->
+
+    <!--=========== BEGIN HEADER SECTION ================-->
+    <header id="header">
+      <!-- BEGIN MENU -->
+      <div class="menu_area">
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">  <div class="container">
+            <div class="navbar-header">
+              <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- LOGO -->
+              <!-- TEXT BASED LOGO -->
+                <a class="navbar-brand" href="index.html">PVP <span>Polytechnic</span></a>
+                <!--Image Based LOGO-->
+                <!--<a class="navbar-brand" href="index.html"><img id="logo" src="../images1/logo_small.jpg" class='img-circle' width="60" alt="logo"></a>-->
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
+                <li><a href="#slider">Home</a></li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">About<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+
+                    <li><a href="#aboutUs">About us</a></li>
+
+                    <li><a href="#ourTutors">Management</a></li>
+
+
+                  </ul>
+                </li>
+                <li class="dropdown"><!-- First dropdown-->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Events<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+
+                    <li><a href="../dept_sports/index_portal.html">Sports</a></li>
+                    <li><a href="../NSS/index_portal.html">NSS</a></li>
+                    <li><a href="../yoga/index_portal.html">Yoga</a></li>
+                    <li><a href="../technical_events/index_portal.html">Technical events</a></li>
+                    <li><a href="../extra_cc/index_portal.html">Extra curicular activities</a></li>
+
+
+
+                      </ul>
+                    </li>
+
+
+
+
+
+                <li><a href="#ourCourses">Course</a></li>
+
+
+
+                <li class="dropdown"><!-- First dropdown-->
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Facilities<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+
+                    <li><a href="../placments/index.html">Placements</a></li>
+                    <li><a href="../women_cell/index.html">Women Cell</a></li>
+                    <li><a href="../hostel/index.html">Hostel</a></li>
+                    <li><a href="../scholarship/index.html">Scholarship</a></li>
+                    <li><a href="../canteen/index.html">Canteen</a></li>
+                    <li><a href="../library/index.html">Library</a></li>
+
+
+                      </ul>
+                    </li>
+
+                <li><a href="#gallery">Gallery</a></li>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Departments<span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+
+                    <li><a href="../dept_civil/index.html">CIVIL ENGINEERING</a></li>
+                    <li><a href="../dept_me/index.html">MECHANICAL ENGINEERING</a></li>
+                    <li><a href="../dept_ee/index.html">ELECTRICALS AND ELECTRONICS ENGINEERING</a></li>
+                    <li><a href="../dept_ec/index.html">ELECTRONICS AND COMMUNICATION ENGINEERING</a></li>
+                    <li><a href="../dept_home_cs/index.html">COMPUTER SCIENCE AND ENGINEERING</a></li>
+                    <li><a href="../dept_is/index.html">INFORMATION SCIENCE AND TECHNOLOGY</a></li>
+                      <li><a href="../dept_ic/index.html">INSTRUMENTATION AND CONTROL ENGINEERING</a></li>
+                      <li><a href="../dept_at/index.html">AUTOMOBILE ENGINEERING</a></li>
+                        <li><a href="../dept_adft/index.html">APPAREL DESIGN AND FASHION TECHNOLOGY(Un-aided)</a></li>
+                    <li><a href="../dept_hum_science/index.html">SCIENCE AND HUMANITIES</a></li>
+                      <li><a href="../admin_staff/index.html">ADMINISTRATION</a></li>
+
+
+                  </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li onclick="log_out()"><a href="#"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+      </div>
+      <!-- END MENU -->
+    </header>
+    <!--=========== END HEADER SECTION ================-->
+
+    <!--=========== BEGIN SLIDER SECTION ================-->
+    <section id="slider">
+      <div class="row">
+        <div class="col-lg-12 col-md-12">
+          <div class="slider_area">
+            <!-- Start super slider -->
+            <div id="slides">
+              <ul class="slides-container">
+                <li>
+                  <img src="img/slider/2.jpg" alt="img">
+                   <div class="slider_caption">
+                    <h2>Largest & Beautiful Campus</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+
+                  </div>
+                  </li>
+                <!-- Start single slider-->
+                <li>
+                  <img src="img/slider/3.jpg" alt="img">
+                   <div class="slider_caption slider_right_caption">
+                    <h2>Better Education Environment</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+
+                  </div>
+                </li>
+                <!-- Start single slider-->
+                <li>
+                  <img src="img/slider/4.jpg" alt="img">
+                   <div class="slider_caption">
+                    <h2>Find out you in better way</h2>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters.Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search</p>
+
+                  </div>
+                </li>
+              </ul>
+              <nav class="slides-navigation">
+                <a href="#" class="next"></a>
+                <a href="#" class="prev"></a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== END SLIDER SECTION ================-->
+
+    <!--=========== BEGIN ABOUT US SECTION ================-->
+    <section id="aboutUs">
+      <div class="container">
+        <div class="row">
+        <!-- Start about us area -->
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="aboutus_area wow fadeInLeft">
+            <h2 class="titile">About Us</h2>
+            <img src="../images1/founder_about.jpg" alt="founder" width="1000px" class="img-circle">
+            <p>P.V.P Polytechnic was established in the year 1987-88  by Panchajanya Vidyapheeta Welfare Trust (PVPWT) Bangalore. PVPWT is founded by Late Sri. M. H. Jayaprakash Narayan. The Institution was started with approved by A.I.C.T.E New Delhi  and aided by government of Karnataka in Departments of Civil Engineering, Mechanical Engineering and Electrical and Electronics Engineering (EEE).  Electronics and Communication Engineering,  Computer Science and Engineering, Information Science and Engineering , Instrumentation Technology and Apparel design and fashion technology(Un-aided)
+            <br /><br />
+            The Institution is aided by Government of Karnataka, approved by All India Council for Technical Education (AICTE), New Delhi and is affiliated to B.T.E Bangalore.
+            <br /><br />
+            The P.V.P Polytechnic has its own four storeyed building sprawling campus in the premises of Dr.Ambedkar institute of technology on the outer ring road,adjacent to jnana Bharathi campus of Bangalore University just 10km from heart of Bangalore city.
+            <br /><br />
+            The campus is well connected to all parts of the city by our own institute buses and Bangalore Metropolitan Transport Corporation(BMTC)buses.
+            <br /><br />
+            As a grant-in-aid institution of  Government of Karnataka,100% of seats are filled up purely by merit by the department of technical  education.
+            <br /><br />
+            The Institution has a sufficient built-up area. with a large number of spacious, well ventilated class rooms, smart class rooms with e-learning facilities, Laboratories, Data Center,  Workshops, Drawing Halls, Seminar Halls, Library and Information Center, Sports Complex, and Auditorium.
+            <br /><br />
+            The Institution is having well qualified faculty members involved in various research, testing and consultancy activities and carrying out technical works of practical importance. This has resulted in publications in good refereed journals and patents.
+          </p>
+
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="newsfeed_area wow fadeInRight">
+            <ul class="nav nav-tabs feed_tabs" id="myTab2">
+              <li class="active"><a href="#news" data-toggle="tab">News</a></li>
+              <li><a href="#notice" data-toggle="tab">Notice</a></li>
+              <li><a href="#events" data-toggle="tab">Events</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <!-- Start news tab content -->
+              <div class="tab-pane fade in active" id="news">
+                <ul class="news_tab" id="news_list_cont">
+                <h1>Please wait for the updates.....</h1>
+              <!--dynamic list will be added-->
+              </ul>
+              <style>#hide{visibility: hidden;}</style>
+              <ul class="news_tab" id="add_news_cont" >
+              </ul>
+
+              <p class="see_all"  id="see" onclick="write_all('news','see','hide',no_of_news,news_array)">See All</p>
+              <p class="see_all" id="hide" onclick="toggle_btn('add_news_cont','see','hide')">Hide</p>
+
+                <div id="tab_portal_news_div">
+                  <input type="button"  value="Add News" class="btn btn-primary  btn-block" onclick="edit_tab_pane_portal('news','add_news_portal')" id="add_news_btn">
+                </div>
+                <div id="add_news_portal" class="form-group">
+                  <!--The news Portal form will be added here-->
+                </div>
+            </div>
+              <!-- Start notice tab content -->
+              <div class="tab-pane fade " id="notice">
+                <ul class="news_tab" id='notice_list_cont'>
+
+                  </ul>
+                  <style>#hide2{visibility: hidden;}</style>
+                  <ul class="news_tab" id="add_notice_cont" >
+                  </ul>
+
+                  <p class="see_all"  id="see2" onclick="write_all('notice','see2','hide2',no_of_notice,notice_array)">See All</p>
+                  <p class="see_all" id="hide2" onclick="toggle_btn('add_notice_cont','see2','hide2')">Hide</p>
+                  <div id="tab_portal_notice_div">
+                    <input type="button"  value="Add Notice" class="btn btn-primary  btn-block" onclick="edit_tab_pane_portal('notice','add_notice_portal')" id="add_notice_btn">
+                  </div>
+                  <div id="add_notice_portal" class="form-group">
+                    <!--The news Portal form will be added here-->
+                  </div>
+                </div>
+
+
+
+              <!-- Start events tab content -->
+              <div class="tab-pane fade " id="events">
+                <ul class="news_tab" id='events_list_cont'>
+
+                </ul>
+                <ul class='news_tab' id='add_events_cont'></ul>
+                <style>#hide1{visibility: hidden;}</style>
+                <p class="see_all"  id="see1" onclick="write_all('events','see1','hide1',no_of_events,events_array)">See All</p>
+                <p class="see_all" id="hide1" onclick="toggle_btn('add_events_cont','see1','hide1')">Hide</p>
+
+                <div id="tab_portal_events_div">
+                  <input type="button"  value="Add Event
+                  " class="btn btn-primary  btn-block" onclick="edit_tab_pane_portal('events','add_events_portal')" id="add_event_btn">
+                </div>
+                <div id="add_events_portal" class="form-group">
+                  <!--The news Portal form will be added here-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!--=========== END ABOUT US SECTION ================-->
+    <!--=========== BEGIN WHY US SECTION ================-->
+    <section id="whyUs">
+      <!-- Start why us top -->
+      <div class="row">
+        <div class="col-lg-12 col-sm-12">
+          <div class="whyus_top">
+            <div class="container">
+              <!-- Why us top titile -->
+              <div class="row">
+                <div class="col-lg-12 col-md-12">
+                  <div class="title_area">
+                    <h2 class="title_two">FACILITIES</h2>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <!-- End Why us top titile -->
+              <!-- Start Why us top content  -->
+              <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                      <img class="img-circle" src="img/facilities/library.png" width="170px" height="160px">
+                    </div>
+                    <h3>Library</h3>
+                    <p>Library has all neccessary books for students of all the courses with the good infrastructure of reading room</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                          <img class="img-circle" src="img/facilities/placements.jpg" width="170px" height="160px">
+                    </div>
+                    <h3>Placements</h3>
+                    <p>The job placement officer is to provide carrer counselling to candidates and looks for job opportunities for the students</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                    <img class="img-circle" src="img/facilities/women_cell.png" width="170px" height="160px">
+                    </div>
+                    <h3>Women Cell</h3>
+                      <p>To enhance self-esteem and self confidence in girl students and staff in college.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+
+                        <img class="img-circle" src="img/facilities/scholarship.png" width="170px" height="160px">
+                    </div>
+                    <h3>Scholarship</h3>
+                    <p>College provides scholarship for the good academic with poor backgorund and specially provided for SC/ST students.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                        <img class="img-circle" src="img/facilities/bus.png" width="170px" height="160px">
+                    </div>
+                    <h3>Bus facilities</h3>
+                    <p>College provides bus facilities for students transportation.</p>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                  <div class="single_whyus_top wow fadeInUp">
+                    <div class="whyus_icon">
+                        <img class="img-circle" src="img/facilities/canteen.png" width="170px" height="160px">
+                    </div>
+                    <h3>Canteen</h3>
+                    <p>Canteen facility is available inside the college campus with quality food.</p>
+                  </div>
+                </div>
+
+
+              <div class="col-lg-3 col-md-3 col-sm-3">
+                <div class="single_whyus_top wow fadeInUp">
+                  <div class="whyus_icon">
+                    <img class="img-circle" src="img/facilities/hostel.png" width="170px" height="160px">
+                  </div>
+                  <h3>Hostel</h3>
+                  <p>Hostel facility is available for the students with quality food , good infrastructure and maintainence.</p>
+                </div>
+              </div>
+            </div>
+            </div>
+              <!-- End Why us top content  -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End why us top -->
+
+
+    </section>
+    <!--=========== END WHY US SECTION ================-->
+
+
+    <!--=========== BEGIN OUR COURSES SECTION ================-->
+    <section id="ourCourses">
+      <div class="container">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="title_area">
+              <h2 class="title_two">Our Courses</h2>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses titile -->
+        <!-- Start Our courses content -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="ourCourse_content">
+              <ul class="course_nav" id="add_courses">
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/ce.jpeg"   width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Dept of Civil Engineering</a></h3>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image6">
+                      <p id="hod_name6">Loading... </p><p>,HOD</p>
+                      <div class='form-group'>
+                      <input type="text" placeholder="NEW HOD" id='hod_name6' class="form-control input-lg" onchange='change_hod_name(6,this.value)'>
+                      <br /><input type='file' id='hod_img_file6' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn6' value="Upload Image" onclick="upload_hod_image('hod_img_file6',6)">
+                        <br />
+                    </div>
+                    <div id="c_portal6">
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                ``
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/cs.jpeg"  width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#" id="dept_name1" >Dept of Computer Science and Engineering</a></h3>
+                    <p id="dept_desc1">when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image1">
+                      <p id="hod_name1">Loading...</p><p>,HOD</p>
+                      <div class='form-group'>
+                      <input type="text" placeholder="New HOD" id='hod_name1' class="form-control input-lg" onchange='change_hod_name(1,this.value)'><br />
+                      <input type='file' id='hod_img_file1' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn1' value="Upload Image" onclick="upload_hod_image('hod_img_file1',1)">
+                      <br />
+                    </div>
+                    <div id="c_portal1">
+                    </div>
+                  </div>
+                  </div>
+                </li>
+
+
+
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/eee.jpeg"  width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#" >Dept of Electricals and Electronics Enginnering</a></h3>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image3">
+                      <p id="hod_name3">Loading...</p><p>,HOD</p>
+                      <div class='form-group'>
+                      <input type="text" placeholder="NEW HOD" id='hod_name3' class="form-control input-lg" onchange='change_hod_name(3,this.value)'><br />
+                      <input type='file' id='hod_img_file3' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn3' value="Upload Image" onclick="upload_hod_image('hod_img_file3',3)">
+                        <br />
+                    </div>
+                    <div id="c_portal3">
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/me.jpeg"  width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#"  >Dept of Mechanical Engineering</a></h3>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image4">
+                      <p id="hod_name4">Loading...</p><p>,HOD</p>
+                      <div class='form-group'>
+                      <input type="text" placeholder="NEW HOD" id='hod_name4' class="form-control input-lg" onchange='change_hod_name(4,this.value)'><br />
+                      <input type='file' id='hod_img_file4' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn4' value="Upload Image" onclick="upload_hod_image('hod_img_file4',4)">
+                        <br />
+                    </div>
+                    <div id="c_portal4">
+                    </div>
+                  </div>
+                </div>
+                </li>
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/at.jpeg"   width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Dept of Automobile Engineering</a></h3>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image5">
+                      <p id="hod_name5">Loading... </p><p>,HOD</p>
+                      <div class='form-group'>
+                      <input type="text" placeholder="NEW HOD" id='hod_name5' class="form-control input-lg" onchange='change_hod_name(5,this.value)'><br />
+                      <input type='file' id='hod_img_file5' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn5' value="Upload Image" onclick="upload_hod_image('hod_img_file5',5)">
+                        <br />
+                    </div>
+                    <div id="c_portal5">
+                    </div>
+                    </div>
+                  </div>
+                </li>
+
+
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/ice.jpeg"  width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Dept of Instrumentation and Control Engineering</a></h3>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image7">
+                      <p id="hod_name7">Loading...</p><p>,HOD</p>
+                      <div class='form-group' >
+                      <input type="text" placeholder="NEW HOD" id='hod_name7' class="form-control input-lg" onchange='change_hod_name(7,this.value)'><br />
+                      <input type='file' id='hod_img_file7' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn7' value="Upload Image" onclick="upload_hod_image('hod_img_file7',7)">
+                        <br />
+                    </div>
+                    <div id="c_portal7">
+                    </div>
+                    </div>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/adft.jpeg"   width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more" id="course_hyperlink8">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#">Dept of Apparel Design and Fashion Technology</a></h3>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image8">
+                      <p id="hod_name8">Loading... </p><p>,HOD</p>
+                      <div class='form-group'>
+                      <input type="text" placeholder="NEW HOD" id='hod_name8' class="form-control input-lg" onchange='change_hod_name(8,this.value)'><br />
+                      <input type='file' id='hod_img_file8' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn8' value="Upload Image" onclick="upload_hod_image('hod_img_file8',8)">
+                        <br />
+                    </div>
+                    <div id="c_portal8">
+                    </div>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="single_course">
+                    <div class="singCourse_imgarea">
+                      <img src="../images1/course_img/is.jpeg"  width="250" height="200" />
+                      <div class="mask">
+                        <a href="#" class="course_more">View Course</a>
+                      </div>
+                    </div>
+                    <div class="singCourse_content">
+                    <h3 class="singCourse_title"><a href="#" >Dept of Information Science</a></h3>
+                    <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                    </div>
+                    <div class="singCourse_author">
+                      <img src="../images1/default_avatar.png" alt="img" id="hod_image9">
+                      <p id="hod_name9">Loading...</p><p>,HOD</p>
+                      <div class='form-group'>
+                      <input type="text" placeholder="NEW HOD" id='hod_name9' class="form-control input-lg" onchange='change_hod_name(9,this.value)'><br />
+                      <input type='file' id='hod_img_file9' accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input"><br />
+                      <input type='button' class='btn btn-primary' id='hod_image_btn9' value="Upload Image" onclick="upload_hod_image('hod_img_file9',9)">
+                        <br />
+                    </div>
+                    <div id="c_portal9">
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses content -->
+      </div>
+    </section>
+    <!--=========== END OUR COURSES SECTION ================-->
+
+    <!--=========== BEGIN GALLERY SECTION ================-->
+    <section id="gallery">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="title_area">
+              <h2 class="title_two">Gallery</h2>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12" id="gallery_img_sec">
+            <div id="gallerySLide" class="gallery_area">
+
+            </div>
+            <br />
+            <br />
+              <center>
+                <h3>Add Image</h3><hr />
+              <input type="file"  id="new_gallery_img" onchange="preview_image('output_img_g','new_gallery_img')" accept="image/jpeg,image/jpg,image/jpe,image/png,image/gif,image/webp,image/bmp,image/tiff" ref="input">
+              <br />
+              <img src='../images1/image_default.png' id='output_img_g'>
+              <script>
+              function preview_image(output_elem,input_elem)
+              {
+                  var reader = new FileReader();
+                  reader.onload = function()
+                  {
+                    var output = document.getElementById(output_elem);
+                    output.src = reader.result;
+                  }
+                  var get_img_elem=document.getElementById(input_elem);
+                  reader.readAsDataURL(get_img_elem.files[0]);
+                }
+                </script><br /><br />
+              <input type="button" class='btn btn-primary' value='Add Image' id="gallery_add_btn" onclick="add_gallery_image()">
+            </center>
+            <div id="gallery_portal_p_div"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--=========== END GALLERY SECTION ================-->
+
+
+    <!--=========== BEGIN OUR TUTORS SECTION ================-->
+    <section id="ourTutors">
+      <div class="container">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="title_area">
+              <h2 class="title_two">Our Management</h2>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <!-- End Our courses titile -->
+
+        <!-- Start Our courses content -->
+        <section class="team" id="team">
+          <div class="container" id="add_management">
+                  <h1>LOADING <br />PLEASE WAIT...............</h1>
+          </div>
+
+          <div class="container form-group">
+
+            <div class="row">
+            <hr /><h3>Add new Person</h3><hr />
+            <img src='../images1/default_avatar.png' id='output_pers_img'>
+              <div class='card card-block'>
+                <h3>Select an image File</h3>
+                <input type='file' id='new_person_image' onchange="preview_image('output_pers_img','new_person_image')">
+                <div class="col-xs-6">
+                <div class='card-title-wrap'>
+
+                    <span class='card-title'>Name</span>
+                    <input type="text" id='new_person_name' placeholder="Name" class='form-control'>
+
+                </div>
+                <br />
+                  <div class='card-title-wrap'>
+
+                    <span class='card-title'>POSITION</span>
+                      <input type="text" id='new_person_position' placeholder="Position" class='form-control'>
+
+                  </div>
+                  <br />
+                  <div class='card-title-wrap'>
+
+                        <span class='card-title'>QUALIFICATION</span>
+                        <input type="text" id='new_person_qualification' placeholder="Qualification" class='form-control'>
+
+                    </div>
+                    <br />
+
+                      <div class="card-title-wrap">
+                        <span class='card-title'>DESIGNATION</span>
+
+                      <input type="text" id="new_person_designation" placeholder="Designation" class='form-control'>
+
+                  </div>
+
+        </div>
+      </div>
+        </div>
+        <br />
+        <br />
+        <input type="button" class="btn btn-primary" value="Add Person" onclick="upload_new_person()">
+      </div>
+      <div id="management_p_portal"></div>
+
+        </section>
+        <!-- End Our courses content -->
+
+    <!--=========== END OUR TUTORS SECTION ================-->
+
+    <!--=========== BEGIN STUDENTS TESTIMONIAL SECTION ================-->
+    <section id="studentsTestimonial">
+      <div class="container">
+       <!-- Our courses titile -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="title_area">
+              <h2 class="title_two">TESTIMONIALS</h2>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses titile -->
+
+        <!-- Start Our courses content -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="studentsTestimonial_content">
+              <div class="row">
+                <!-- start single student testimonial -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p id='msg1'>Pls wait............................</p>
+                      <textarea class="wp-form-control wpcf7-textarea" cols="10" row="5" placeholder="Enter testimonial" id="testimonial_data1" style="border : 2px solid" onchange="update_testimonial_data(1)"></textarea>
+                      <input type="button" class="btn btn-primary" value="update" onclick="update_testimonial_data(1)">
+                    </div>
+                    <img class="stsTesti_img" src="../images1/default_avatar.png" alt="img" id='s_img1'>
+                    <input type="file" id="testimonial_image_file1">
+                    <input type="button" class="btn btn-success" id="testimonial_img_update1" value="upload image" onclick="update_testimonial_image(1)">
+                    <div class="stsTestimonial_content form-group">
+                      <h3 id='s_name1'>Loading....</h3>
+                      <input type="text" id="testimonial_name1" class="form-control" onchange="update_testimonial_data(1)">
+                      <span id='s_desc1'>Loading....</span>
+                      <input type="text" id="testimonial_desc1" class="form-control" onchange="update_testimonial_data(1)">
+                      <p id='s_current_status1'>Loading...</p>
+                      <input type="text" id="testimonial_status1" class="form-control" onchange="update_testimonial_data(1)">
+                    </div>
+                  </div>
+                </div>
+                <!-- End single student testimonial -->
+                <!-- start single student testimonial -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p id='msg2'>Please wait.....................</p>
+                      <textarea class="wp-form-control wpcf7-textarea" cols="10" row="5" placeholder="Enter testimonial" id="testimonial_data2" style="border : 2px solid" onchange="update_testimonial_data(2)"></textarea>
+                      <input type="button" class="btn btn-primary" value="update" onclick="update_testimonial_data(2)">
+                    </div>
+                    <img class="stsTesti_img" src="../images1/default_avatar.png" alt="img" id='s_img2'>
+                    <input type="file" id="testimonial_image_file2">
+                    <input type="button" class="btn btn-success" id="testimonial_img_update2" value="upload image" onclick="update_testimonial_image(2)">
+                    <div class="stsTestimonial_content form-group">
+                      <h3 id='s_name2'>Loading....</h3>
+                      <input type="text" id="testimonial_name2" class="form-control" onchange="update_testimonial_data(2)">
+                      <span id='s_desc2'>Loading....</span>
+                      <input type="text" id="testimonial_desc2" class="form-control" onchange="update_testimonial_data(2)">
+                      <p id='s_current_status2'>Loading...</p>
+                      <input type="text" id="testimonial_status2" class="form-control" onchange="update_testimonial_data(2)">
+                    </div>
+                  </div>
+                </div>
+                <!-- End single student testimonial -->
+                <!-- start single student testimonial -->
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <div class="single_stsTestimonial wow fadeInUp">
+                    <div class="stsTestimonial_msgbox">
+                      <p id='msg3'>Please wait..............................</p>
+                      <textarea class="wp-form-control wpcf7-textarea" cols="10" row="5" placeholder="Enter testimonial" id="testimonial_data3" style="border : 2px solid" onchange="update_testimonial_data(3)"></textarea>
+                      <input type="button" class="btn btn-primary" value="update" onclick="update_testimonial_data(3)">
+                    </div>
+                    <img class="stsTesti_img" src="../images1/default_avatar.png" alt="img" id='s_img3'>
+                    <input type="file" id="testimonial_image_file3"><input type="button" class="btn btn-success" id="testimonial_img_update3" value="upload image" onclick="update_testimonial_image(3)">
+                    <div class="stsTestimonial_content form-group">
+                      <h3 id='s_name3'>Loading....</h3>
+                      <input type="text" id="testimonial_name3" class="form-control" onchange="update_testimonial_data(3)">
+                      <span id='s_desc3'>Loading....</span>
+                      <input type="text" id="testimonial_desc3" class="form-control" onchange="update_testimonial_data(3)">
+                      <p id='s_current_status3'>Loading...</p>
+                      <input type="text" id="testimonial_status3" class="form-control" onchange="update_testimonial_data(3)">
+                    </div>
+                  </div>
+                </div>
+                <!-- End single student testimonial -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Our courses content -->
+      </div>
+    </section>
+    <!--=========== END STUDENTS TESTIMONIAL SECTION ================-->
+    <!--=========== BEGIN CONTACT SECTION ================-->
+    <section id="contact">
+      <div class="container">
+       <div class="row">
+          <div class="col-lg-12 col-md-12">
+            <div class="title_area">
+              <h2 class="title_two">Messages</h2>
+              <span></span>
+            </div>
+          </div>
+       </div>
+
+       <div id="visible_msg_content">
+         Loading.......
+      </div>
+      <div id="hidden_msg_content" style="hidden">
+      </div>
+      <input type="button" class="btn btn-success" value="See All Message" onclick="see_all_msg()" id="see_all_msg_btn">
+      <input type="button" class="btn btn-success" value="Hide All message" onlck="hide_all_msg()" id="hide_all_msg_btn" style="visibility:hidden">
+      </div>
+    </section>
+    <!--=========== END CONTACT SECTION ================-->
+
+    <!--=========== BEGIN FOOTER SECTION ================-->
+    <footer id="footer">
+      <!-- Start footer top area -->
+      <div class="footer_top">
+        <div class="container">
+          <div class="row">
+            <div class="col-ld-3  col-md-3 col-sm-3">
+              <div class="single_footer_widget">
+                <h3>OUR LOCATION</h3>
+                <p>Dr.AIT Campus , Mallathalli <br /> Banglore-560056</p>
+                <p><b>Call :</b> +080 9210029121</p>
+                <p><b>Email :</b> vvinu9876@gmail.com</p>
+                <p style="color:blue"><a href="https://goo.gl/maps/6CnrZe1r6ok">Google Map Link</a></p>
+              </div>
+            </div>
+            <div class="col-ld-3  col-md-3 col-sm-3">
+              <div class="single_footer_widget">
+                <h3>Page Links</h3>
+                <ul class="footer_widget_nav">
+                  <li><a href="#">Our Courses</a></li>
+                  <li><a href="#">Our Management</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">About Us</a></li>
+
+                </ul>
+              </div>
+            </div>
+            <div class="col-ld-3  col-md-3 col-sm-3">
+              <div class="single_footer_widget">
+                <h3>Design Team</h3>
+                <ul class="footer_widget_nav">
+                  <li><a href="#">Brundha P</a></li>
+                  <li><a href="#">KAVYASHREE</a></li>
+                  <li><a href="#">Geetha J</a></li>
+                  <li><a href="#">MUKUND</a></li>
+                  <li><a href="#">VINAY P</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- End footer top area -->
+
+      <!-- Start footer bottom area -->
+      <div class="footer_bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomLeft">
+                <p> Copyright &copy; All Rights Reserved</p>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <div class="footer_bootomRight">
+                <p>Designed by <a href="http://wpfreeware.com/" rel="nofollow">wpfreeware</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End footer bottom area -->
+    </footer>
+    <!--=========== END FOOTER SECTION ================-->
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+
+    <!-- initialize jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Preloader js file -->
+    <script src="js/queryloader2.min.js" type="text/javascript"></script>
+    <!-- For smooth animatin  -->
+    <script src="js/wow.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- slick slider -->
+    <script src="js/slick.min.js"></script>
+    <!-- superslides slider -->
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.animate-enhanced.min.js"></script>
+    <script src="js/jquery.superslides.min.js" type="text/javascript" charset="utf-8"></script>
+    <!-- for circle counter -->
+    <script src='https://cdn.rawgit.com/pguso/jquery-plugin-circliful/master/js/jquery.circliful.min.js'></script>
+    <!-- Gallery slider -->
+    <script type="text/javascript" language="javascript" src="js/jquery.tosrus.min.all.js"></script>
+
+    <!-- Custom js-->
+    <script src="js/custom.js"></script>
+    <!--Notify JS-->
+    <script src="js/notify.min.js"></script>
+
+
+    <!--===============================================
+    Template Design By WpFreeware Team.
+    Author URI : http://www.wpfreeware.com/
+    ====================================================-->
+
+
+  </body>
+</html>
